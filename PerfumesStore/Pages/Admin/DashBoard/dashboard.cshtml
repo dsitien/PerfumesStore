@@ -1,0 +1,126 @@
+﻿@page
+@model PerfumesStore.Pages.Admin.DashBoard.dashboardModel
+@{
+    Layout = null;
+    ViewData["Title"] = "Dashboard";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/dashboard.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center; /* Center contents horizontally */
+            align-items: center; /* Center contents vertically */
+            min-height: 100vh; /* Ensure full viewport height coverage */
+        }
+
+        .dashboard {
+            width: 100%;
+            max-width: 800px; /* Adjust max-width as needed */
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .dashboard-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+            .dashboard-header .admin-icon {
+                font-size: 40px;
+                margin-right: 10px;
+                color: #007bff; /* Blue color for admin icon */
+            }
+
+        .dashboard-title {
+            font-size: 24px;
+            color: #333;
+            margin: 0;
+        }
+
+        .dashboard-menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .menu-item {
+            text-decoration: none;
+            color: #333;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 150px;
+            text-align: center;
+            transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+            .menu-item:hover {
+                background-color: #f1f1f1;
+                border-color: #ccc;
+            }
+
+            .menu-item .icon {
+                font-size: 30px;
+                margin-bottom: 10px;
+                color: #007bff; /* Blue color for icon */
+            }
+
+            .menu-item .title {
+                font-size: 16px;
+                font-weight: bold;
+            }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="dashboard-header">
+            <div class="admin-icon">&#128100;</div>
+            <h1 class="dashboard-title">@ViewData["Title"]</h1>
+        </div>
+        <div class="dashboard-menu">
+            <a href="/Admin/ProductManager" class="menu-item">
+                <div class="icon">&#128200;</div>
+                <div class="title">Product Manager</div>
+            </a>
+            <a href="/Admin/AccountManager" class="menu-item">
+                <div class="icon">&#128100;</div>
+                <div class="title">User Manager</div>
+            </a>
+            <a href="/Admin/OrderManager" class="menu-item">
+                <div class="icon">&#128179;</div>
+                <div class="title">Order Manager</div>
+            </a>
+            <a href="/Admin/BrandManager" class="menu-item">
+                <div class="icon">&#128196;</div>
+                <div class="title">Brand Manager</div>
+            </a>
+            <a href="/Admin/CategoryManager" class="menu-item">
+                <div class="icon">&#127968;</div>
+                <div class="title">Category Manager</div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

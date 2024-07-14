@@ -1,0 +1,121 @@
+﻿@page
+@model PerfumesStore.Pages.Admin.BrandManager.CreateModel
+
+@{
+    Layout = null;
+    ViewData["Title"] = "Create";
+}
+
+<style>
+    body {
+        background-color: #e0f7fa; /* Màu nền của trang */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-container {
+        width: 100%;
+        max-width: 800px; /* Điều chỉnh kích thước form */
+        background-color: #ffffff; /* Màu nền của form */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 30px;
+        box-sizing: border-box;
+        margin-top: 20px; /* Khoảng cách với phần trên */
+        text-align: center; /* Căn giữa theo chiều ngang */
+    }
+
+        .form-container h1 {
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+    .form-group {
+        margin-bottom: 15px;
+        text-align: left; /* Căn trái cho các input và label */
+    }
+
+        .form-group label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%; /* Độ rộng 100% cho các input, textarea và select */
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+
+    .back-link {
+        display: block;
+        margin-top: 10px;
+        text-align: center;
+        text-decoration: none;
+        color: #007bff;
+    }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+</style>
+
+<div class="form-container">
+    <h1>Create Brand</h1>
+
+    <form method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        @* <div class="form-group">
+            <label asp-for="Brand.BrandId" class="control-label">Brand ID</label>
+            <input asp-for="Brand.BrandId" class="form-control" />
+            <span asp-validation-for="Brand.BrandId" class="text-danger"></span>
+        </div> *@
+
+        <div class="form-group">
+            <label asp-for="Brand.BrandName" class="control-label">Brand Name</label>
+            <input asp-for="Brand.BrandName" class="form-control" />
+            <span asp-validation-for="Brand.BrandName" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Brand.Description" class="control-label">Description</label>
+            <textarea asp-for="Brand.Description" class="form-control" rows="4"></textarea>
+            <span asp-validation-for="Brand.Description" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Create" class="btn btn-primary" />
+        </div>
+    </form>
+
+    <a asp-page="Index" class="back-link">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

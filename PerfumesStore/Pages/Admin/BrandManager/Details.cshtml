@@ -1,0 +1,94 @@
+﻿@page
+@model PerfumesStore.Pages.Admin.BrandManager.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa; /* Màu nền cho toàn bộ trang */
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff; /* Nền trắng cho container chứa chi tiết brand */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        font-size: 28px;
+        color: #333;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #007bff; /* Màu nền đầu bảng cho tiêu đề */
+        color: white;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2; /* Màu nền cho các hàng chẵn */
+    }
+
+    tr:hover {
+        background-color: #ddd; /* Hiệu ứng hover */
+    }
+
+    a {
+        color: #007bff;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+
+        a:hover {
+            text-decoration: underline;
+        }
+</style>
+
+<h1>Details</h1>
+
+<div class="container">
+    <h4>Brand Details</h4>
+    <table>
+        <tr>
+            <th>Field</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>Brand Name</td>
+            <td>@Html.DisplayFor(model => model.Brand.BrandName)</td>
+        </tr>
+        <tr>
+            <td>Description</td>
+            <td>@Html.DisplayFor(model => model.Brand.Description)</td>
+        </tr>
+        <tr>
+            <td>Status</td>
+            <td>@Html.DisplayFor(model => model.Brand.Status)</td>
+        </tr>
+    </table>
+</div>
+
+<div style="text-align: center; margin-top: 20px;">
+    <a asp-page="./Edit" asp-route-id="@Model.Brand.BrandId" class="btn btn-primary">Edit</a>
+    <a asp-page="./Index" class="btn btn-secondary">Back to List</a>
+</div>

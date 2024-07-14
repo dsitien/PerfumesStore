@@ -1,0 +1,70 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .dashboard-header .admin-icon {
+        font-size: 32px;
+        margin-right: 10px;
+    }
+
+.dashboard-menu {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the left */
+    padding-left: 20px; /* Add padding to the left */
+}
+
+.menu-item {
+    text-decoration: none;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Ensure full width */
+    font-size: 24px;
+}
+
+    .menu-item:hover {
+        background-color: #f9f9f9;
+    }
+
+.icon {
+    font-size: 32px;
+    margin-right: 10px;
+}
+
+.title {
+    font-size: 24px;
+}

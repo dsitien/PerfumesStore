@@ -1,0 +1,77 @@
+﻿@page
+@model PerfumesStore.Pages.Login.loginModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+    <link rel="stylesheet" href="~/css/styles.css" />
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/js/code.jquery.com_jquery-3.7.0.min.js" />
+    
+    
+    <style>
+        .card {
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    @await Html.PartialAsync("Partials/_HeaderPartial", Model)
+
+    <section class="vh-100 bg-image" style="background-image: url('/images/bg.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="">
+            <div class="container h-100 py-3">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-12 col-md-8 col-lg-6 col-xl-5" style="margin-top: 100px;">
+                        <div class="card bg-white bg-opacity-75 text-black transition-background" style="border-radius: 1rem;">
+                            <div class="card-body p-5 text-center">
+                                <div class="mb-md-2">
+                                    <form method="post">
+                                        @if (Model.message != null)
+                                        {
+                                            <p class="text-danger">@Model.message</p>
+                                        }
+                                        <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+                                        <p class="text-black-50 mb-5">Please enter your login and password!</p>
+                                        <div class="form-outline form-white mb-4">
+                                            <input type="text" id="username" class="form-control form-control-lg" name="User" />
+                                            <label class="form-label" for="username">Username</label>
+                                        </div>
+                                        <div class="form-outline form-white mb-4">
+                                            <input type="password" id="password" class="form-control form-control-lg" name="Pass" />
+                                            <label class="form-label" for="password">Password</label>
+                                        </div>
+                                        <input class="form-check-input" type="checkbox" name="RememberMe" value="true" /> Remember me?
+                                        <p class="small mb-5 pb-lg-2"><a class="text-black-50" href="/ForgotPassword/ForgotPassword">Forgot password?</a></p>
+                                        <button class="btn btn-outline-dark btn-lg px-5" type="submit">Login</button>
+                                    </form>
+                                </div>
+                                <div>
+                                    <p class="mb-0">Don't have an account? <a href="/Register/register" class="text-body fw-bold">Register</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    @await Html.PartialAsync("Partials/_FooterPartial", Model)
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+    </script>
+
+</body>
+</html>

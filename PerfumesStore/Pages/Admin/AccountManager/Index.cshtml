@@ -1,0 +1,212 @@
+﻿@page
+@model PerfumesStore.Pages.Admin.AccountManager.IndexModel
+@{
+    Layout = null;
+    ViewData["Title"] = "Account Management";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+            padding-top: 20px;
+            padding-bottom: 20px;
+            position: relative;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .back-link {
+            position: absolute;
+            bottom: 0;
+            right: 20px;
+        }
+
+            .back-link a {
+                display: inline-block;
+                padding: 6px 12px; /* Điều chỉnh kích thước nút */
+                font-size: 14px; /* Điều chỉnh kích thước chữ */
+                border-radius: 5px;
+                background-color: #007bff; /* Màu nền xanh dương */
+                color: white;
+                text-decoration: none;
+                transition: background-color 0.3s;
+            }
+
+                .back-link a:hover {
+                    background-color: #0056b3; /* Màu khi hover */
+                }
+
+        .table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+            .table thead th {
+                color: #333;
+                padding: 12px;
+                text-align: center;
+                border: 1px solid #ddd;
+            }
+
+            .table tbody tr {
+                border-bottom: 1px solid #ddd;
+            }
+
+                .table tbody tr:nth-child(even) {
+                    background-color: #f2f2f2;
+                }
+
+            .table tbody td {
+                padding: 12px;
+                text-align: center;
+                border: 1px solid #ddd;
+            }
+
+            .table a {
+                color: #007bff;
+                text-decoration: none;
+                font-weight: bold;
+                margin: 0 5px;
+            }
+
+                .table a:hover {
+                    text-decoration: underline;
+                }
+
+        .search-container {
+            width: 80%;
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+            .search-container input[type="text"] {
+                width: 300px;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px 0 0 5px;
+                outline: none;
+            }
+
+            .search-container button {
+                padding: 10px 20px;
+                border: none;
+                background-color: #007bff;
+                color: #fff;
+                border-radius: 0 5px 5px 0;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+                .search-container button:hover {
+                    background-color: #0056b3;
+                }
+
+        .action-buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+            .action-buttons a {
+                display: inline-block;
+                padding: 10px 20px;
+                font-size: 14px;
+                border-radius: 5px;
+                background-color: #007bff; /* Màu nền xanh dương */
+                color: white;
+                text-decoration: none;
+                transition: background-color 0.3s;
+            }
+
+                .action-buttons a:hover {
+                    background-color: #0056b3; /* Màu khi hover */
+                }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>@ViewData["Title"]</h1>
+
+        <div class="back-link">
+            <a asp-page="/Admin/Dashboard/dashboard">Back to Manager Page</a>
+        </div>
+        <div class="search-container">
+            <form method="get">
+                <input type="text" name="searchString" value="@Model.CurrentFilter" placeholder="Search User..." />
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <div class="action-buttons">
+            <a asp-page="Create">Create Account</a>
+        </div>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>FullName</th>
+                        <th>Phone</th>
+                        <th>Address</th>
+                        <th>Status</th>
+                        <th>Role</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Users)
+                    {
+                        <tr>
+                            <td>@item.Username</td>
+                            <td>@item.Email</td>
+                            <td>@item.FullName</td>
+                            <td>@item.Phone</td>
+                            <td>@item.Address</td>
+                            <td>@item.Status</td>
+                            <td>@item.Role</td>
+                            <td>
+                                <a asp-page="./Edit" asp-route-id="@item.UserId">Edit</a> |
+                                <a asp-page="./Details" asp-route-id="@item.UserId">Details</a> |
+                                <a asp-page="./Delete" asp-route-id="@item.UserId">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <div class="pagination">
+                @if (Model.Users.HasPreviousPage)
+                {
+                    <a asp-page="./Index" asp-route-sortOrder="@Model.CurrentSort"
+                       asp-route-searchString="@Model.CurrentFilter"
+                       asp-route-pageIndex="@(Model.Users.PageIndex - 1)">Previous</a>
+                }
+                @if (Model.Users.HasNextPage)
+                {
+                    <a asp-page="./Index" asp-route-sortOrder="@Model.CurrentSort"
+                       asp-route-searchString="@Model.CurrentFilter"
+                       asp-route-pageIndex="@(Model.Users.PageIndex + 1)">Next</a>
+                }
+            </div>
+        </div>
+    </div>
+</body>
+</html>

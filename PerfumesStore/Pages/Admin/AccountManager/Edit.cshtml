@@ -1,0 +1,190 @@
+﻿@page
+@model PerfumesStore.Pages.Admin.AccountManager.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa; /* Màu nền cho toàn bộ trang */
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background: linear-gradient(to right, #ffecd2, #fcb69f);
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h4 {
+        font-size: 28px;
+        color: #333;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    hr {
+        border-top: 1px solid #ccc; /* Đường gạch ngang */
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .control-label {
+        font-weight: bold;
+        color: #555;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .btn-primary {
+        color: #fff;
+        background-color: #007bff; /* Màu nền xanh da trời cho nút */
+        border-color: #007bff;
+        padding: 10px 20px;
+        font-size: 16px;
+        margin-right: 10px; /* Để nút "Save" và "Back to List" cách nhau */
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+    .btn-back {
+        color: #fff;
+        background-color: #0056b3; /* Màu nền vàng nhạt cho nút "Back to List" */
+        border-color: #0056b3;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+        .btn-back:hover {
+            background-color: red;
+            border-color: red;
+        }
+
+    a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+    .text-danger {
+        color: #dc3545; /* Màu chữ cho thông báo lỗi */
+    }
+
+    /* Table styles */
+    .table {
+        width: 100%;
+        margin-bottom: 20px;
+        border-collapse: collapse;
+        font-size: 16px;
+    }
+
+        .table th,
+        .table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .table th {
+            background-color: #FFB6C1; /* Màu nền vàng nhạt cho header của bảng */
+            color: white;
+            font-weight: bold;
+        }
+
+/*         .table tbody tr:nth-of-type(even) {
+            background-color: #fff; /* Màu nền trắng cho các dòng xen kẽ */
+        } */
+
+</style>
+
+<div class="container">
+    <h1>Edit User</h1>
+
+    <hr />
+
+    <form method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="User.UserId" />
+
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th class="control-label"><label asp-for="User.Username"></label></th>
+                    <td><input asp-for="User.Username" class="form-control" /><span asp-validation-for="User.Username" class="text-danger"></span></td>
+                </tr>
+                <tr>
+                    <th class="control-label"><label asp-for="User.Password"></label></th>
+                    <td><input asp-for="User.Password" class="form-control" /><span asp-validation-for="User.Password" class="text-danger"></span></td>
+                </tr>
+                <tr>
+                    <th class="control-label"><label asp-for="User.Email"></label></th>
+                    <td><input asp-for="User.Email" class="form-control" /><span asp-validation-for="User.Email" class="text-danger"></span></td>
+                </tr>
+                <tr>
+                    <th class="control-label"><label asp-for="User.FullName"></label></th>
+                    <td><input asp-for="User.FullName" class="form-control" /><span asp-validation-for="User.FullName" class="text-danger"></span></td>
+                </tr>
+                <tr>
+                    <th class="control-label"><label asp-for="User.Phone"></label></th>
+                    <td><input asp-for="User.Phone" class="form-control" /><span asp-validation-for="User.Phone" class="text-danger"></span></td>
+                </tr>
+                <tr>
+                    <th class="control-label"><label asp-for="User.Address"></label></th>
+                    <td><input asp-for="User.Address" class="form-control" /><span asp-validation-for="User.Address" class="text-danger"></span></td>
+                </tr>
+                <tr>
+                    <th class="control-label"><label asp-for="User.Status">Status</label></th>
+                    <td>
+                        <select asp-for="User.Status" class="form-control rounded">
+                            <option value="Active">Active</option>
+                            <option value="Inactive">Inactive</option>
+                        </select>
+                        <span asp-validation-for="User.Status" class="text-danger"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="control-label"><label asp-for="User.Role">Role</label></th>
+                    <td>
+                        <select asp-for="User.Role" class="form-control">
+                            <option value="User">User</option>
+                            <option value="Admin">Admin</option>
+                            <option value="Staff">Staff</option>
+                        </select>
+                        <span asp-validation-for="User.Role" class="text-danger"></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="form-group text-center">
+            <input type="submit" value="Save" class="btn btn-primary" />
+            <a asp-page="./Index" class="btn btn-back">Back to List</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

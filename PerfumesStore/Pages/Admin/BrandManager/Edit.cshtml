@@ -1,0 +1,112 @@
+﻿@page
+@model PerfumesStore.Pages.Admin.BrandManager.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<style>
+    body {
+        background-color: #f0f0f0; /* Màu nền chính */
+        color: #333; /* Màu chữ chính */
+    }
+
+    .form-container {
+        margin: 50px auto;
+        max-width: 500px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .btn-primary {
+        margin-top: 15px;
+        width: 100%; /* Độ rộng 100% cho nút Save */
+    }
+
+    .radio-label {
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    .back-link {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .form-control {
+        border-color: #ccc; /* Màu viền input */
+    }
+
+    .btn-primary {
+        background-color: #007bff; /* Màu nút Save */
+        border-color: #007bff;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3; /* Màu nút Save khi hover */
+            border-color: #0056b3;
+        }
+
+    .text-danger {
+        color: #dc3545; /* Màu chữ khi validation lỗi */
+    }
+
+    .control-label {
+        font-weight: bold; /* Đậm chữ cho label */
+    }
+
+    h1 {
+        color: #007bff; /* Màu tiêu đề h1 */
+        text-align: center;
+    }
+
+    hr {
+        border-top: 1px solid #ccc; /* Đường kẻ phân cách */
+    }
+</style>
+
+<h1>Edit Brand</h1>
+
+<div class="form-container">
+    <form method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="Brand.BrandId" />
+
+        <div class="form-group">
+            <label asp-for="Brand.BrandName" class="control-label">Brand Name</label>
+            <input asp-for="Brand.BrandName" class="form-control" />
+            <span asp-validation-for="Brand.BrandName" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Brand.Description" class="control-label">Description</label>
+            <input asp-for="Brand.Description" class="form-control" />
+            <span asp-validation-for="Brand.Description" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label">Status</label><br />
+            <label class="radio-label"><input type="radio" asp-for="Brand.Status" value="Active" checked /> Active</label>
+            <label class="radio-label"><input type="radio" asp-for="Brand.Status" value="Inactive" /> Inactive</label>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Save" class="btn btn-primary" />
+        </div>
+    </form>
+
+    <div class="back-link">
+        <a asp-page="./Index">Back to Brand List</a>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

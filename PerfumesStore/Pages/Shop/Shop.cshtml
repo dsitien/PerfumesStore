@@ -1,0 +1,265 @@
+﻿@page
+@model PerfumesStore.Pages.Shop.ShopModel
+@{
+    ViewData["Title"] = "Shop";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link href="~/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="~/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="~/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="~/plugins/OwlCarousel2-2.2.1/animate.css">
+    <link rel="stylesheet" type="text/css" href="~/styles/main_styles.css">
+    <link rel="stylesheet" type="text/css" href="~/styles/responsive.css">
+
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+            /* Handle on hover */
+            ::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+
+        .filter-section {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .filter-title {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .filter-group h5 {
+            margin-bottom: 10px;
+        }
+
+        .brand-list {
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        .form-check-label {
+            margin-left: 5px;
+        }
+        .filter-section {
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin-top: 55px;
+            border-radius: 5px;
+        }
+
+        .filter-title {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .filter-group h5 {
+            margin-bottom: 10px;
+        }
+
+        .brand-list {
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        .form-check-label {
+            margin-left: 5px;
+        }
+
+
+        .grid_sorting_button_category {
+            height: 40px;
+            width: 100%; /* Ensures it takes up the full width of the parent container */
+            padding-left: 25px;
+            padding-right: 25px;
+            cursor: pointer;
+            border: solid 1px #ebebeb;
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+            border-radius: 3px;
+            margin: 5px 0; /* Adds margin between buttons for better spacing */
+            display: block; /* Ensures it stacks vertically */
+        }
+
+            .grid_sorting_button_category:first-child {
+                margin-top: 0; /* Removes margin from the top of the first button */
+            }
+
+            .grid_sorting_button_category:last-child {
+                margin-bottom: 0; /* Removes margin from the bottom of the last button */
+            }
+
+            .grid_sorting_button_category.active:hover {
+                background: #FE7C7F !important;
+            }
+
+            .grid_sorting_button_category.active {
+                color: #FFFFFF;
+                background: #fe4c50;
+            }
+
+    </style>
+</head>
+<body>
+    @await Html.PartialAsync("Partials/_HeaderPartial", Model)
+
+    <div class="new_arrivals" style="margin-top: 90px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="filter-section">
+                        <div class="filter-title">Filter</div>
+                        <div class="filter-content">
+                            <div class="filter-group">
+                                <h5>Brand</h5>
+                                <div class="brand-list" style="max-height: 200px; overflow-y: auto;">
+                                    <ul class="arrivals_grid_sorting clearfix button-group filters-button-group">
+                                    @foreach (var brand in Model.Brands)
+                                    {
+                                            <li class="grid_sorting_button_category button  mt-1"
+                                                data-filter=".bracelet"
+                                                onclick="filterBrandProducts('@brand.BrandName.ToLower()')">
+                                                    @brand.BrandName.ToUpper()
+                                            </li>
+                                    }
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="filter-group">
+                                <h5>Category</h5>
+                                <div class="brand-list" style="max-height: 200px; overflow-y: auto;">
+                                    <ul class="arrivals_grid_sorting clearfix button-group filters-button-group">
+                                    @foreach (var category in Model.Category)
+                                    {
+                                            <li class="grid_sorting_button_category button  mt-1"
+                                                data-filter=".bracelet"
+                                                onclick="filterProducts('@category.CategoryName.ToLower()')"
+                                               >
+                                                    @category.CategoryName.ToUpper()
+                                            </li>
+                                    }
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="filter-group mt-4">
+                                <h5>Price</h5>
+                                <div class="brand-list" style="max-height: 200px; overflow-y: auto;">
+                                <ul class="arrivals_grid_sorting clearfix button-group filters-button-group">
+                                @foreach (var priceRange in Model.PriceRanges)
+                                {
+                                    <li class="grid_sorting_button_category button  mt-1"
+                                        data-filter=".bracelet"
+                                        onclick="filterPriceProducts('@priceRange.Text')"
+                                     @(priceRange.Text.Equals(priceRange.Text) ? "class=active is-checked" : "")>
+                                        @priceRange.Text
+                                    </li>
+                                }
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div id="productList" class="product-grid" data-isotope='{ "itemSelector": ".product-item", "layoutMode": "fitRows" }'>
+                        @await Html.PartialAsync("_ProductListPartial", Model.ProductList)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @await Html.PartialAsync("Partials/_FooterPartial", Model)
+
+    <script src="~/js/jquery-3.2.1.min.js"></script>
+    <script src="~/styles/bootstrap4/popper.js"></script>
+    <script src="~/styles/bootstrap4/bootstrap.min.js"></script>
+    <script src="~/plugins/Isotope/isotope.pkgd.min.js"></script>
+    <script src="~/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+    <script src="~/plugins/easing/easing.js"></script>
+    <script src="~/js/custom.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="~/js/site.js"></script>
+    <script>
+        function filterProducts(category) {
+            $.ajax({
+                url: '@Url.Page("/Shop/Shop", "FilterProducts")',
+                type: 'GET',
+                data: { category: category },
+                success: function (result) {
+                    $('#productList').html(result);
+                    $('.grid_sorting_button_category').removeClass('active is-checked');
+                    $('.grid_sorting_button_category').filter(function () {
+                        return $(this).text().trim().toLowerCase() === category.toLowerCase();
+                    }).addClass('active is-checked');
+                },
+                error: function (xhr, status, error) {
+                    console.log(error);
+                }
+            });
+        }
+
+        function filterBrandProducts(brand) {
+            $.ajax({
+                url: '@Url.Page("/Shop/Shop", "FilterBrandProducts")',
+                type: 'GET',
+                data: { brand: brand },
+                success: function (result) {
+                    $('#productList').html(result);
+                    $('.grid_sorting_button_category').removeClass('active is-checked');
+                    $('.grid_sorting_button_category').filter(function () {
+                        return $(this).text().trim().toLowerCase() === brand.toLowerCase();
+                    }).addClass('active is-checked');
+                },
+                error: function (xhr, status, error) {
+                    console.log(error);
+                }
+            });
+        }
+
+
+        function filterPriceProducts(price) {
+            $.ajax({
+                url: '@Url.Page("/Shop/Shop", "FilterPriceProducts")',
+                type: 'GET',
+                data: { price: price },
+                success: function (result) {
+                    $('#productList').html(result);
+                    $('.grid_sorting_button_category').removeClass('active is-checked');
+                    $('.grid_sorting_button_category').filter(function () {
+                        return $(this).text().trim().toLowerCase() === price.toLowerCase();
+                    }).addClass('active is-checked');
+                },
+                error: function (xhr, status, error) {
+                    console.log(error);
+                }
+            });
+        }
+
+    </script>
+
+</body>
+</html>

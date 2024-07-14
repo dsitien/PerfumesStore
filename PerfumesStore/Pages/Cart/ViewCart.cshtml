@@ -1,0 +1,125 @@
+﻿@page "{id:int}"
+@using PerfumesStore.Models
+@model PerfumesStore.Pages.Cart.ViewCartModel
+@{
+    ViewData["Title"] = "Product Details";
+}
+
+@await Html.PartialAsync("Partials/_HeaderPartial", Model)
+<link href="~/styles/cart.css" rel="stylesheet" />
+<h2>Your Cart</h2>
+
+
+<section class="vh-100" style="background-color: #fdccbc;">
+    <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+
+            <div class="col">
+                <p><span class="h2">Shopping Cart </span><span class="h4">@(ViewBag.TotalItems) item(s) in your cart</span></p>
+
+                <div class="card mb-4">
+                    <div class="card-body p-4">
+                        <form method="post" asp-page-handler="Checkout">
+                            @if (Model.messageError != null)
+                            {
+                                <p class="text-danger">@Model.messageError</p>
+                            }
+                            @if (TempData["SuccessMessage"] != null)
+                            {
+                                <div class="alert alert-success">
+                                    @TempData["SuccessMessage"]
+                                </div>
+                            }
+
+                            @if (TempData["ErrorMessage"] != null)
+                            {
+                                <div class="alert alert-danger">
+                                    @TempData["ErrorMessage"]
+                                </div>
+                            }
+
+                            @foreach (var item in Model.Carts)
+                            {
+                                <div class="row align-items-center">
+
+                                    <div class="col-md-1">
+                                        @{
+                                            // Check if the current item's CartId is in SelectedCartIds session
+                                            var isSelected = HttpContext.Session.GetObject<List<int>>("SelectedCartIds")?.Contains(item.CartId) ?? false;
+                                        }
+                                        <input type="checkbox" id="@item.CartId" name="selectedCartIds" value="@item.CartId" @(isSelected ? "checked" : "") />
+                                    </div>
+                                    <div class="col-md-2">
+                                        @if (item.Product.ProductImg != null && item.Product.ProductImg.Length > 0)
+                                        {
+                                            string imageBase64 = Convert.ToBase64String(item.Product.ProductImg);
+                                            string imageSrc = $"data:image/jpeg;base64,{imageBase64}";
+                                            <a asp-page="/Products/ProductDetails" asp-route-id="@item.Product.ProductId">
+                                                <img style="max-width: 100px; max-height: 100px;" src="@imageSrc" alt="Product Image" />
+                                            </a>
+                                        }
+                                    </div>
+                                    <div class="col-md-2 d-flex justify-content-center">
+                                        <div>
+                                            <p class="small text-muted mb-4 pb-2">Name</p>
+                                            <p class="lead fw-normal mb-0">@item.Product.ProductName</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 d-flex justify-content-center">
+                                        <div>
+                                            <p class="small text-muted mb-4 pb-2">Quantity</p>
+                                            <p class="lead fw-normal mb-0">@item.Quantity</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 d-flex justify-content-center">
+                                        <div>
+                                            <p class="small text-muted mb-4 pb-2">Price</p>
+                                            <p class="lead fw-normal mb-0">$@item.Product.Price</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 d-flex justify-content-center">
+                                        <div>
+                                            <p class="small text-muted mb-4 pb-2">Total</p>
+                                            <p class="lead fw-normal mb-0">$@(item.Product.Price * item.Quantity)</p>
+                                        </div>
+                                        <div>
+                                            
+                                            <a class="btn btn-danger" asp-page-handler="RemoveFromCart" asp-route-productId="@item.Product.ProductId" onsubmit="return confirm('Are you sure you want to remove this item from the cart?');">Remove</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            }
+                            <div class="d-flex justify-content-end">
+                                <a asp-page="/Index" type="button" class="btn btn-light btn-lg me-2">Continue shopping</a>
+                                <button type="submit" class="btn btn-primary btn-lg">Create Order</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="card mb-5">
+                    <div class="card-body p-4">
+                        @{
+                            decimal cartTotal = 0;
+                            foreach (var item in Model.Carts)
+                            {
+                                cartTotal += ((decimal)item.Product.Price * item.Quantity);
+                            }
+                        }
+
+                        <div class="float-end">
+                            <p class="mb-0 me-5 d-flex align-items-center">
+                                <span class="small text-muted me-2">Order total:</span> <span class="lead fw-normal">$@cartTotal</span>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@await Html.PartialAsync("Partials/_FooterPartial", Model)
+
+

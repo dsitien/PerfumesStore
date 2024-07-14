@@ -1,0 +1,530 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <link rel="stylesheet" type="text/css" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+        <link href="~/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="~/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+        <link rel="stylesheet" type="text/css" href="~/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+        <link rel="stylesheet" type="text/css" href="~/plugins/OwlCarousel2-2.2.1/animate.css">
+        <link rel="stylesheet" type="text/css" href="~/styles/main_styles.css">
+        <link rel="stylesheet" type="text/css" href="~/styles/responsive.css">
+
+    </head>
+    <header class="header trans_300">
+
+        <!-- Top Navigation -->
+
+        <div class="top_nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="top_nav_left">free shipping on all u.s orders over $50</div>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <div class="top_nav_right">
+                            <ul class="top_nav_menu">
+
+
+                                @if (Model.message != null)
+                                {
+                                    <li class="account">
+                                        <a href="#">
+                                            <span>
+                                                <span>Hello  @Model.message</span>
+                                            </span>
+                                            <i class="fa fa-angle-down"></i>
+                                        </a>
+                                        <ul class="account_selection">
+                                            <li><a asp-page="/Logout/Logout"><i class="fa fa-sign-out" aria-hidden="true"></i>Log Out</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="account">
+                                        <a href="#">
+                                            Order
+                                            <i class="fa fa-angle-down"></i>
+                                        </a>
+                                        <ul class="account_selection">
+                                            <li><a asp-page="Orders/ViewOrders" asp-route-id="@Model.CurrentUsers.UserId"><i class="fa fa-sign-out" aria-hidden="true"></i>Your Order</a></li>
+
+                                        </ul>
+                                    </li>
+                                }
+                                @if (Model.message == null)
+                                {
+                                    <li class="account">
+                                        <a href="#">
+                                            My Account
+                                            <i class="fa fa-angle-down"></i>
+                                        </a>
+                                        <ul class="account_selection">
+                                            <li><a asp-page="Login/login"><i class="fa fa-sign-in" aria-hidden="true"></i>LogIn</a></li>
+                                            <li><a asp-page="Register/register"><i class="fa fa-user-plus" aria-hidden="true"></i>Register</a></li>
+                                        </ul>
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navigation -->
+
+        <div class="main_nav_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-right">
+                        <div class="logo_container">
+                            <a href="/Index">Perfumes<span>Shop</span></a>
+                        </div>
+                        <nav class="navbar">
+                            <ul class="navbar_menu">
+                                <li><a href="#" id="homeLink">home</a></li>
+                                <li><a href="#" id="bestSellerLink">best seller</a></li>
+                                <li><a asp-page="/Shop/Shop">Shop</a></li>
+                                <li><a href="#" id="newArrivalLink">new arrival</a></li>
+                                <li><a asp-page="/Chat/Chat">contact</a></li>
+                            </ul>
+                            <ul class="navbar_user">
+                                @if (Model.message != null)
+                                {
+                                    <li>
+                                        <a asp-page="/Profile/ViewProfile" asp-route-id="@Model.CurrentUsers.UserId">
+                                            <i class="fa fa-user" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li class="checkout">
+                                        <a asp-page="/Cart/ViewCart" asp-route-id="@Model.CurrentUsers.UserId">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                }
+                                @if (Model.message == null)
+                                {
+                                    <li class="checkout">
+                                        <a asp-page="/Login/login">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                }
+                            </ul>
+                            <div class="hamburger_container">
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!-- HEADER -->
+    <!-- /HEADER -->
+    <!-- NAVIGATION -->
+    <div class="super_container">
+        <!-- Header -->
+        <div class="fs_menu_overlay"></div>
+        <!-- Hamburger Menu -->
+        <div class="hamburger_menu">
+            <div class="hamburger_close"><i class="fa fa-times" aria-hidden="true"></i></div>
+            <div class="hamburger_menu_content text-right">
+                <ul class="menu_top_nav">
+                    <li class="menu_item"><a href="/">home</a></li>
+                    <li class="menu_item"><a asp-action="Category" asp-controller="Product">shop</a></li>
+                    <li class="menu_item"><a asp-action="Contact" asp-controller="Home">contact</a></li>
+                    @* @if (Context.Session.GetInt32("AccountId") != null)
+                { *@
+                    <li class="menu_item"><a asp-action="Index" asp-controller="Logout" asp-route-accountId="hello">Log out</a></li>
+
+                    @* } *@
+                    @* else
+                { *@
+                    <li class="menu_item"><a asp-action="Index" asp-controller="SignIn">Sign In</a></li>
+                    @* } *@
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slider -->
+
+        <div class="main_slider" style="background-image:url(images/BannerPerfumes.jpg)">
+            <div class="container fill_height">
+                <div class="row align-items-center fill_height">
+                    <div class="col">
+                        <div class="main_slider_content">
+                           
+                            <div class="red_button shop_now_button"><a href="Shop/Shop">shop now</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Banner -->
+
+        <div class="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="banner_item align-items-center" style="background-image:url(images/Man.jpg)">
+                            <div class="banner_category">
+                                <a href="#">Man</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="banner_item align-items-center" style="background-image:url(images/Female.jpg)">
+                            <div class="banner_category">
+                                <a href="#">Female</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="banner_item align-items-center" style="background-image:url(images/Unisex.jpg)">
+                            <div class="banner_category">
+                                <a href="#">Unisex</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- New Arrivals -->
+
+        <div class="new_arrivals">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <div class="section_title new_arrivals_title">
+                            <h2>New Arrivals</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col text-center">
+                        <div class="new_arrivals_sorting">
+                            <ul class="arrivals_grid_sorting clearfix button-group filters-button-group">
+                                <li class="grid_sorting_button button active is-checked" data-filter=".all" onclick="filterProducts('all')">All</li>
+                                @foreach (var category in Model.Category)
+                                {
+                                    <li class="grid_sorting_button button"
+                                        data-filter=".bracelet"
+                                        onclick="filterProducts('@category.CategoryName.ToLower()')"
+                                    @(category.CategoryName.Equals(category.CategoryName) ? "class=active is-checked" : "")>
+                                        @category.CategoryName.ToUpper()
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div id="productList" class="product-grid" data-isotope='{ "itemSelector": ".product-item", "layoutMode": "fitRows" }'>
+                            @await Html.PartialAsync("_ProductListPartial", Model.ProductList)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Deal of the week -->
+
+        <div class="deal_ofthe_week">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="deal_ofthe_week_img">
+                            <img src="/images/BannerFooter.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-right deal_ofthe_week_col">
+                        <div class="deal_ofthe_week_content d-flex flex-column align-items-center float-right">
+                            <div class="section_title">
+                            </div>
+                            <ul class="timer">
+                                <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                                    <div id="day" class="timer_num">03</div>
+                                    <div class="timer_unit">Day</div>
+                                </li>
+                                <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                                    <div id="hour" class="timer_num">15</div>
+                                    <div class="timer_unit">Hours</div>
+                                </li>
+                                <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                                    <div id="minute" class="timer_num">45</div>
+                                    <div class="timer_unit">Mins</div>
+                                </li>
+                                <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                                    <div id="second" class="timer_num">23</div>
+                                    <div class="timer_unit">Sec</div>
+                                </li>
+                            </ul>
+                            <div class="red_button deal_ofthe_week_button"><a href="/Shop/Shop">shop now</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Best Sellers -->
+
+        <div class="best_sellers">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <div class="section_title new_arrivals_title">
+                            <h2>Best Sellers</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="product-grid" data-isotope='{ "itemSelector": ".product-item", "layoutMode": "fitRows" }'>
+                            @foreach (var product in Model.bestSellerProducts)
+                            {
+                                <div class="product-item @product.Category.CategoryName">
+                                    <div class="product discount product_filter">
+                                        <div class="product_image">
+                                            @if (product.ProductImg != null && product.ProductImg.Length > 0)
+                                            {
+                                                string imageBase64 = Convert.ToBase64String(product.ProductImg);
+                                                string imageSrc = $"data:image/jpeg;base64,{imageBase64}";
+                                                <a asp-page="/Products/ProductDetails" asp-route-id="@product.ProductId">
+                                                    <img src="@imageSrc" alt="Product Image" />
+                                                </a>
+                                            }
+                                        </div>
+                                        <div class="favorite favorite_left"></div>
+                                        <div class="product_info">
+                                            <h6 class="product_name">
+                                                <a asp-page="/Products/ProductDetails" asp-route-id="@product.ProductId">
+                                                    @product.ProductName
+                                                </a>
+                                            </h6>
+                                            <div class="product_price">
+                                                $@product.Price
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <a asp-page="/Products/ProductDetails" asp-route-id="@product.ProductId">
+                                        <button type="submit" class="red_button add_to_cart_button">Details</button>
+                                    </a>
+
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Benefit -->
+
+        <div class="benefit">
+            <div class="container">
+                <div class="row benefit_row">
+                    <div class="col-lg-3 benefit_col">
+                        <div class="benefit_item d-flex flex-row align-items-center">
+                            <div class="benefit_icon"><i class="fa fa-truck" aria-hidden="true"></i></div>
+                            <div class="benefit_content">
+                                <h6>free shipping</h6>
+                                <p>Suffered Alteration in Some Form</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 benefit_col">
+                        <div class="benefit_item d-flex flex-row align-items-center">
+                            <div class="benefit_icon"><i class="fa fa-money" aria-hidden="true"></i></div>
+                            <div class="benefit_content">
+                                <h6>cach on delivery</h6>
+                                <p>The Internet Tend To Repeat</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 benefit_col">
+                        <div class="benefit_item d-flex flex-row align-items-center">
+                            <div class="benefit_icon"><i class="fa fa-undo" aria-hidden="true"></i></div>
+                            <div class="benefit_content">
+                                <h6>45 days return</h6>
+                                <p>Making it Look Like Readable</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 benefit_col">
+                        <div class="benefit_item d-flex flex-row align-items-center">
+                            <div class="benefit_icon"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+                            <div class="benefit_content">
+                                <h6>opening all week</h6>
+                                <p>8AM - 09PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <footer class="footer" style="background-color: #004d40; color: white; padding: 40px 0;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5>ABOUT PARFUMERIE</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" style="color: white;">Home</a></li>
+                            <li><a href="#" style="color: white;">About Us</a></li>
+                            <li><a href="#" style="color: white;">Products</a></li>
+                            <li><a href="#" style="color: white;">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>GUIDE</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" style="color: white;">Shopping Guide</a></li>
+                            <li><a href="#" style="color: white;">Payment Guide</a></li>
+                            <li><a href="#" style="color: white;">Delivery Guide</a></li>
+                            <li><a href="#" style="color: white;">Terms of Use</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>POLICIES</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" style="color: white;">Purchase Policy</a></li>
+                            <li><a href="#" style="color: white;">Privacy Policy</a></li>
+                            <li><a href="#" style="color: white;">Delivery Policy</a></li>
+                            <li><a href="#" style="color: white;">Return & Warranty Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>SUPPORT</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" style="color: white;">Search</a></li>
+                            <li><a href="#" style="color: white;">Login</a></li>
+                            <li><a href="#" style="color: white;">Register</a></li>
+                            <li><a href="#" style="color: white;">Affiliate</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>PAYMENT METHODS</h5>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><img src="~/images/visa.jpg" alt="Visa"></li>
+                            <li class="list-inline-item"><img src="~/images/mastercard.png" alt="Mastercard"></li>
+                            <li class="list-inline-item"><img src="~/images/tien.png" alt="Cash"></li>
+                            <li class="list-inline-item"><img src="~/images/momo.png" alt="Momo"></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <h5>CONNECT WITH US</h5>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h5>SUBSCRIBE</h5>
+                        <form class="form-inline justify-content-center">
+                            <div class="form-group mb-2">
+                                <label for="name" class="sr-only">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Name">
+                            </div>
+                            <div class="form-group mx-sm-3 mb-2">
+                                <label for="email" class="sr-only">Your Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Your Email">
+                            </div>
+                            <button type="submit" class="btn btn-dark mb-2">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p>Parfumerie.vn | Powered by Sapo</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="~/js/jquery-3.2.1.min.js"></script>
+    <script src="~/styles/bootstrap4/popper.js"></script>
+    <script src="~/styles/bootstrap4/bootstrap.min.js"></script>
+    <script src="~/plugins/Isotope/isotope.pkgd.min.js"></script>
+    <script src="~/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+    <script src="~/plugins/easing/easing.js"></script>
+    <script src="~/js/custom.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#bestSellerLink").click(function () {
+                $('html, body').animate({
+                    scrollTop: $(".best_sellers").offset().top
+                }, 1000);
+                return false;
+            });
+
+            $("#newArrivalLink").click(function () {
+                $('html, body').animate({
+                    scrollTop: $(".new_arrivals").offset().top
+                }, 1000);
+                return false;
+            });
+
+
+            $("#homeLink").click(function () {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 1000);
+                return false;
+            });
+        });
+    </script>
+    <script src="~/js/site.js"></script>
+    <script>
+
+        function filterProducts(category) {
+            $.ajax({
+                url: '@Url.Page("/Index", "FilterProducts")',
+                type: 'GET',
+                data: { category: category },
+                success: function (data) {
+                    $('#productList').html(data);
+                    initializeProductGrid();
+                },
+                error: function () {
+                    alert("An error occurred while filtering products.");
+                }
+            });
+        }
+
+        function initializeProductGrid() {
+            // Reinitialize your grid here
+            $('#productList').isotope({
+                itemSelector: '.product-item',
+                layoutMode: 'fitRows'
+            });
+        }
+
+        $(document).ready(function () {
+            initializeProductGrid();
+        });
+    </script>
+
+}

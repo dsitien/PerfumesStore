@@ -1,0 +1,52 @@
+﻿@page
+@model PerfumesStore.Pages.Orders.ViewOrdersModel
+@{
+    ViewData["Title"] = "Orders";
+}
+@await Html.PartialAsync("Partials/_HeaderPartial", Model)
+<div class="container">
+    <h2>Order Details</h2>
+    <div class="row">
+        <div class="col-md-12" style="margin-top:90px">
+            <div class="card">
+                <div class="card-header">
+                    <h3>@Model.CurrentUsers.Username Order</h3>
+                </div>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>ID Order</th>
+                            <th>Name</th>
+                            <th>total amount</th>
+                            <th>Order Date</th>
+                            <th>Status of Order</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Orders)
+                        {
+                            <tr>
+                                <td>@item.OrderId</td>
+                                <td>@Model.Orderdetails </td>
+                                <td>@item.TotalAmount</td>
+                                <td>@item.CreatedAt</td>
+                                <td>@item.Status</td>
+                                <td>
+                                    <a asp-page="/Orders/OrderDetails" asp-route-id="@item.OrderId" class="btn btn-primary">Details</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <hr />
+                <div class="d-flex justify-content-between">
+                    <div><strong>Orders total:</strong></div>
+                    <div>@Model.Orders.Sum(c => c.OrderId) Orders</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@await Html.PartialAsync("Partials/_FooterPartial", Model)
+</div>

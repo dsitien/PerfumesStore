@@ -1,0 +1,121 @@
+﻿@page
+@model PerfumesStore.Pages.Register.registerModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link href="~/css/styles.css" rel="stylesheet" />
+    <script src="~/js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .bg-image {
+            background-image: url('~/img/background.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .content {
+            max-height: 100%;
+            overflow: auto;
+        }
+
+        .card {
+            margin-top: 2.5rem;
+        }
+    </style>
+</head>
+<body>
+    @await Html.PartialAsync("Partials/_HeaderPartial", Model)
+
+    <section class="vh-80 bg-image">
+        <div class="content">
+            <div class="container py-4">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-md-6" style="margin-top: 90px;">
+                        <div class="card rounded-3 bg-white bg-opacity-75">
+                            <div class="card-body p-4">
+                                <h2 class="text-center mb-4">CREATE AN ACCOUNT</h2>
+                                <form method="post">
+                                    
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">User Name</label>
+                                        <input type="text" id="name" class="form-control" asp-for="Input.UserName" />
+                                        @if (Model.message != null)
+                                        {
+                                            <p class="text-danger">@Model.message</p>
+                                        }
+                                        <span asp-validation-for="Input.UserName" class="text-danger"></span>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Your Email</label>
+                                        <input type="email" id="email" class="form-control" asp-for="Input.Email" />
+                                        <span asp-validation-for="Input.Email" class="text-danger"></span>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="fullname" class="form-label">Full Name</label>
+                                        <input type="text" id="fullname" class="form-control" asp-for="Input.FullName" />
+                                        <span asp-validation-for="Input.FullName" class="text-danger"></span>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <div class="col">
+                                            <label for="password" class="form-label">Password</label>
+                                            <input type="password" id="password" class="form-control" asp-for="Input.Password" />
+                                            <span asp-validation-for="Input.Password" class="text-danger"></span>
+                                        </div>
+                                        <div class="col">
+                                            <label for="confirm-password" class="form-label">Confirm Password</label>
+                                            <input type="password" id="confirm-password" class="form-control" asp-for="Input.ConfirmPassword" />
+                                            <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="phone" class="form-label">Phone Number</label>
+                                        <input type="text" id="phone" class="form-control" asp-for="Input.PhoneNumber" />
+                                        <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="address" class="form-label">Address</label>
+                                        <input type="text" id="address" class="form-control" asp-for="Input.Address" />
+                                        <span asp-validation-for="Input.Address" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" required type="checkbox" value="" id="terms" />
+                                        <label class="form-check-label" for="terms">
+                                            I agree to the <a href="#" class="text-body"><u>Terms of Service</u></a>
+                                        </label>
+                                    </div>
+                                    <div class="d-grid">
+                                        <button type="submit" class="btn btn-outline-dark btn-lg px-5">Register</button>
+                                    </div>
+                                    <p class="text-center mt-3 mb-0">Already have an account? <a href="/Login/login" class="text-body fw-bold"><u>Login here</u></a></p>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @await Html.PartialAsync("Partials/_FooterPartial", Model)
+        </div>
+      
+    </section>
+    
+</body>
+</html>

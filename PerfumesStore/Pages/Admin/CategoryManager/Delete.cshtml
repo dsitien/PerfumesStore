@@ -1,0 +1,153 @@
+﻿@page
+@model PerfumesStore.Pages.Admin.CategoryManager.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: #444;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #555;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .details-container {
+            max-width: 600px;
+            width: 100%;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            backdrop-filter: blur(10px);
+            margin-top: 20px;
+        }
+
+        .details-header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        .details-item {
+            margin-bottom: 10px;
+        }
+
+        .details-label {
+            font-weight: bold;
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+            border-color: #dc3545;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, border-color 0.3s;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+            .btn-danger:hover {
+                background-color: #c82333;
+                border-color: #bd2130;
+            }
+
+        .btn-secondary {
+            background-color: #007bff;
+            border-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, border-color 0.3s;
+            text-decoration: none;
+        }
+
+            .btn-secondary:hover {
+                background-color: #0056b3;
+                border-color: #004085;
+            }
+
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+            .action-buttons .btn {
+                margin-right: 10px;
+            }
+
+        .details-text {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="details-container">
+        <h1>Delete</h1>
+
+        <h3>Are you sure you want to delete this?</h3>
+
+        <div class="details-item">
+            <h4>Category</h4>
+            <hr />
+            <div class="details-text">
+                <span class="details-label">Category Name:</span> @Html.DisplayFor(model => model.Category.CategoryName)
+            </div>
+            <div class="details-text">
+                <span class="details-label">Description:</span> @Html.DisplayFor(model => model.Category.Description)
+            </div>
+            <div class="details-text">
+                <span class="details-label">Status:</span> @Html.DisplayFor(model => model.Category.Status)
+            </div>
+        </div>
+
+        <div class="action-buttons">
+            <form method="post">
+                <input type="hidden" asp-for="Category.CategoryId" />
+                <input type="submit" value="Delete" class="btn btn-danger" />
+            </form>
+            <a class="btn btn-secondary" asp-page="./Index">Back to List</a>
+        </div>
+    </div>
+
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+﻿@page
+@model PerfumesStore.Pages.Checkout.CheckoutModel
+@{
+    ViewData["Title"] = "Checkout";
+}
+
+<h2>Checkout</h2>
+
+<section class="checkout-section">
+    <div class="row">
+        <div class="col-md-8">
+            <form method="post">
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <h3>Billing Information</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="Email">Email (optional)</label>
+                            <input type="email" class="form-control" id="Email" name="Email" value="@Model.CurrentUser.Email" />
+                        </div>
+                        <div class="form-group">
+                            <label for="FullName">Full Name</label>
+                            <input type="text" class="form-control" id="FullName" asp-for="FullName" name="FullName" value="@Model.CurrentUser.FullName" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="Phone">Phone Number</label>
+                            <input type="text" class="form-control" id="Phone" asp-for="Phone" name="Phone" value="@Model.CurrentUser.Phone" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="Address">Address</label>
+                            <input type="text" class="form-control" asp-for="ShippingAddress" id="Address" name="ShippingAddress" value="@Model.CurrentUser.Address" required />
+                            <span asp-validation-for="ShippingAddress" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="Notes">Notes (optional)</label>
+                            <textarea class="form-control" id="Notes" name="Notes"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <button type="button" class="btn btn-cancel">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Place Order</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Order Summary (@Model.Carts.Count items)</h3>
+                </div>
+                <div class="card-body">
+                    @foreach (var item in Model.Carts)
+                    {
+                        <div class="mt-1 d-flex justify-content-between align-items-center">
+                            <div>
+                                @if (item.Product.ProductImg != null && item.Product.ProductImg.Length > 0)
+                                {
+                                    string imageBase64 = Convert.ToBase64String(item.Product.ProductImg);
+                                    string imageSrc = $"data:image/jpeg;base64,{imageBase64}";
+                                    <a asp-page="/Products/ProductDetails" asp-route-id="@item.Product.ProductId">
+                                        <img class="product-image" src="@imageSrc" alt="Product Image" />
+                                    </a>
+                                }
+                            </div>
+                            <div class="product-info">
+                                @item.Product.ProductName (@item.Quantity)
+                            </div>
+                            <div class="product-price">
+                                @(item.Quantity * item.Product.Price)₫
+                            </div>
+                        </div>
+                    }
+                    <hr />
+                    <div class="d-flex justify-content-between">
+                        <div>Subtotal</div>
+                        <div>@Model.Carts.Sum(c => c.Quantity * c.Product.Price)₫</div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div>Shipping Fee</div>
+                        <div>-</div>
+                    </div>
+                    <hr />
+                    <div class="d-flex justify-content-between">
+                        <div>Total</div>
+                        <div>@Model.Carts.Sum(c => c.Quantity * c.Product.Price)₫</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<style>
+    .checkout-section {
+        padding: 2rem;
+        background-color: #007bff; /* Blue background */
+        color: #fff; /* White text for better contrast */
+    }
+
+    .card-header h3 {
+        margin: 0;
+    }
+
+    .card-body {
+        color: #000; /* Black text color for card body */
+    }
+
+    .product-image {
+        max-width: 60px;
+        max-height: 60px;
+    }
+
+    .product-info {
+        flex-grow: 1;
+        margin-left: 10px;
+    }
+
+    .product-price {
+        text-align: right;
+        min-width: 80px;
+    }
+
+    .d-flex.justify-content-between {
+        margin-top: 1rem;
+    }
+
+    .btn {
+        padding: 0.5rem 1.5rem;
+    }
+
+    .btn-primary {
+        background-color: #28a745;
+        border-color: #28a745;
+        color: #fff;
+    }
+
+    .btn-cancel {
+        background-color: #dc3545; /* Red background */
+        color: #fff;
+        border: none;
+    }
+
+        .btn-cancel:hover {
+            background-color: #c82333; /* Darker red on hover */
+        }
+</style>

@@ -1,0 +1,131 @@
+﻿@page "{id:int}"
+@model PerfumesStore.Pages.Admin.ProductManager.EditModel
+
+@{
+    Layout = null;
+    ViewData["Title"] = "Edit";
+}
+<div class="edit-container">
+    <h1>Edit</h1>
+
+    <h4>Product</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-12">
+            <form method="post" enctype="multipart/form-data">
+                <input type="hidden" asp-for="Product.ProductId" />
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Product.BrandId" class="control-label"></label>
+                    <select asp-for="Product.BrandId" class="form-control" asp-items="@(ViewData["Brands"] as SelectList)"></select>
+                    <span asp-validation-for="Product.BrandId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Product.CategoryId" class="control-label"></label>
+                    <select asp-for="Product.CategoryId" class="form-control" asp-items="@(ViewData["Categories"] as SelectList)"></select>
+                    <span asp-validation-for="Product.CategoryId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Product.ProductName" class="control-label"></label>
+                    <input asp-for="Product.ProductName" class="form-control" />
+                    <span asp-validation-for="Product.ProductName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Product.Price" class="control-label"></label>
+                    <input asp-for="Product.Price" class="form-control" />
+                    <span asp-validation-for="Product.Price" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Product.Description" class="control-label"></label>
+                    <input asp-for="Product.Description" class="form-control" />
+                    <span asp-validation-for="Product.Description" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ProductImg" class="control-label"></label>
+                    <input asp-for="ProductImg" type="file" class="form-control" />
+                    <span asp-validation-for="ProductImg" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Product.Stock" class="control-label"></label>
+                    <input asp-for="Product.Stock" class="form-control" />
+                    <span asp-validation-for="Product.Stock" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Status</label><br />
+                    <label class="radio-label"><input type="radio" asp-for="Product.Status" value="Active" checked /> Active</label>
+                    <label class="radio-label"><input type="radio" asp-for="Product.Status" value="Inactive" /> Inactive</label>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a class="back-link" asp-page="./Index">Back to List</a>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+<style>
+    .edit-container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #f7f7f7;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+        .edit-container h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .edit-container .form-group {
+            margin-bottom: 20px;
+        }
+
+        .edit-container .form-control {
+            border-radius: 5px;
+        }
+
+        .edit-container .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+            .edit-container .btn-primary:hover {
+                background-color: #0056b3;
+                border-color: #004085;
+            }
+
+        .edit-container .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+            .edit-container .back-link:hover {
+                color: #0056b3;
+            }
+
+        .edit-container .radio-label {
+            margin-right: 20px;
+            font-weight: normal;
+        }
+
+            .edit-container .radio-label input {
+                margin-right: 5px;
+            }
+</style>

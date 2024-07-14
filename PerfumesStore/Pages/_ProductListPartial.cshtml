@@ -1,0 +1,57 @@
+﻿@model List<PerfumesStore.Models.Product>
+<link rel="stylesheet" type="text/css" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+<link href="~/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="~/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="~/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="~/plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="~/styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="~/styles/responsive.css">
+
+
+<script src="~/js/jquery-3.2.1.min.js"></script>
+<script src="~/styles/bootstrap4/popper.js"></script>
+<script src="~/styles/bootstrap4/bootstrap.min.js"></script>
+<script src="~/plugins/Isotope/isotope.pkgd.min.js"></script>
+<script src="~/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="~/plugins/easing/easing.js"></script>
+<script src="~/js/custom.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            @foreach (var product in Model)
+            {
+                <div class="product-item @product.Category.CategoryName">
+                    <div class="product discount product_filter">
+                        <div class="product_image">
+                            @if (product.ProductImg != null && product.ProductImg.Length > 0)
+                            {
+                                string imageBase64 = Convert.ToBase64String(product.ProductImg);
+                                string imageSrc = $"data:image/jpeg;base64,{imageBase64}";
+                                <a asp-page="/Products/ProductDetails" asp-route-id="@product.ProductId">
+                                    <img src="@imageSrc" alt="Product Image" />
+                                </a>
+                            }
+                        </div>
+                        <div class="favorite favorite_left"></div>
+                        <div class="product_info">
+                            <h6 class="product_name">
+                                <a asp-page="/Products/ProductDetails" asp-route-id="@product.ProductId">
+                                    @product.ProductName
+                                </a>
+                            </h6>
+                            <div class="product_price">
+                                $@product.Price
+                            </div>
+                        </div>
+                    </div>
+
+                    <a asp-page="/Products/ProductDetails" asp-route-id="@product.ProductId">
+                        <button type="submit" class="red_button add_to_cart_button">Details</button>
+                    </a>
+                </div>
+            }
+@if (Model == null || Model.Count <= 0)
+{
+<div class="alert alert-info" role="alert">
+    No products found.
+</div>
+}
+    

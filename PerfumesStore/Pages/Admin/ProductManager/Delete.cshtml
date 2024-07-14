@@ -1,0 +1,165 @@
+﻿@page
+@model PerfumesStore.Pages.Admin.ProductManager.DeleteModel
+
+@{
+    Layout = null;
+    ViewData["Title"] = "Delete";
+}
+<style>
+    body {
+        background-color: #f8d7da; /* Màu nền nhạt */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .delete-container {
+        width: 100%;
+        max-width: 600px;
+        background-color: #ffffff; /* Màu nền của form */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+        .delete-container h1 {
+            text-align: center;
+            color: #dc3545; /* Màu chữ đỏ */
+        }
+
+        .delete-container h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333333;
+        }
+
+        .delete-container h4 {
+            margin-top: 20px;
+            color: #333333;
+        }
+
+        .delete-container dl {
+            margin-top: 20px;
+        }
+
+        .delete-container dt {
+            font-weight: bold;
+        }
+
+        .delete-container .product-img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+    .btn-danger {
+        background-color: #dc3545;
+        border-color: #dc3545;
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 4px;
+        margin-top: 20px;
+        color: white;
+    }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+            border-color: #bd2130;
+        }
+
+    .back-link {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        color: #007bff;
+    }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+</style>
+
+<div class="delete-container">
+    <h1>Delete</h1>
+
+    <h3>Are you sure you want to delete this?</h3>
+    <div>
+        <h4>Product</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.Product.Brand)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.Product.Brand.BrandName)
+            </dd>
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.Product.Category)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.Product.Category.CategoryName)
+            </dd>
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.Product.ProductName)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.Product.ProductName)
+            </dd>
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.Product.Price)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.Product.Price)
+            </dd>
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.Product.Description)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.Product.Description)
+            </dd>
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.Product.ProductImg)
+            </dt>
+            <dd class="col-sm-9">
+                @if (Model.Product.ProductImg != null && Model.Product.ProductImg.Length > 0)
+                {
+                    string imageBase64 = Convert.ToBase64String(Model.Product.ProductImg);
+                    string imageSrc = $"data:image/jpeg;base64,{imageBase64}";
+                    <img src="@imageSrc" alt="Product Image" class="product-img" />
+                }
+                else
+                {
+                    <span>No Image Available</span>
+                }
+            </dd>
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.Product.Stock)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.Product.Stock)
+            </dd>
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.Product.Status)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.Product.Status)
+            </dd>
+
+        </dl>
+
+        <form method="post">
+            <input type="hidden" asp-for="Product.ProductId" />
+            <input type="submit" value="Delete" class="btn btn-danger" />
+        </form>
+        <a class="back-link" asp-page="./Index">Back to List</a>
+    </div>
+</div>

@@ -1,0 +1,65 @@
+﻿@page
+@model PerfumesStore.Pages.Register.RegisterVerifyModel
+@{
+    ViewData["Title"] = "RegisterVerify";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+    <link rel="stylesheet" href="~/css/styles.css" />
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/js/code.jquery.com_jquery-3.7.0.min.js" />
+
+
+    <style>
+        .card {
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <section class="vh-100 bg-image" style="background-image: url('/images/bg.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="">
+            <div class="container h-100 py-3">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                        <div class="card bg-white bg-opacity-75 text-black transition-background" style="border-radius: 1rem;">
+                            <div class="card-body p-5 text-center">
+                                <div class="mb-md-2">
+                                    <form method="post">
+                                       
+                                        <h2 class="fw-bold mb-2 text-uppercase">Account Verification</h2>
+                                        <p class="text-black-50 mb-5">Please Check Email and Enter the Code you received!</p>
+                                        <div class="form-outline form-white mb-4">
+                                            @if (Model.Message != null)
+                                            {
+                                                <p class="text-danger">@Model.Message</p>
+                                            }
+                                            <input type="password" id="verificationCode" class="form-control form-control-lg" name="verificationCode" />
+                                            <label class="form-label" for="verificationCode">verificationCode</label>
+                                        </div>
+                                        <button class="btn btn-outline-dark btn-lg px-5" type="submit">Verify</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+    </script>
+
+</body>
+</html>

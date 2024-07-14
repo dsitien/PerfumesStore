@@ -1,0 +1,1281 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PerfumesStore.bundle.scp.css",
+      "PackagePath": "staticwebassets\\PerfumesStore.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\css\\Style.css",
+      "PackagePath": "staticwebassets\\css\\Style.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\css\\dasboard.css",
+      "PackagePath": "staticwebassets\\css\\dasboard.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\css\\footer.css",
+      "PackagePath": "staticwebassets\\css\\footer.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\BannerFooter.jpg",
+      "PackagePath": "staticwebassets\\images\\BannerFooter.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\BannerPerfumes.jpg",
+      "PackagePath": "staticwebassets\\images\\BannerPerfumes.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Calvin Klein\\CK.docx",
+      "PackagePath": "staticwebassets\\images\\Calvin Klein\\CK.docx"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Calvin Klein\\CK10\\Se58d21eb98e04c72a61f0193b24a3133p.jpg",
+      "PackagePath": "staticwebassets\\images\\Calvin Klein\\CK10\\Se58d21eb98e04c72a61f0193b24a3133p.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Calvin Klein\\CK10\\calvin-klein-eternity-aqua-for-men-2.jpg",
+      "PackagePath": "staticwebassets\\images\\Calvin Klein\\CK10\\calvin-klein-eternity-aqua-for-men-2.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Calvin Klein\\CK10\\images.jpg",
+      "PackagePath": "staticwebassets\\images\\Calvin Klein\\CK10\\images.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Calvin Klein\\CK1\\66e5b42ff4a73266a7891f0f4b4afdc4.jpg",
+      "PackagePath": "staticwebassets\\images\\Calvin Klein\\CK1\\66e5b42ff4a73266a7891f0f4b4afdc4.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Calvin Klein\\CK1\\images.jpg",
+      "PackagePath": "staticwebassets\\images\\Calvin Klein\\CK1\\images.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Calvin Klein\\CK2\\CK-Free-calvin-klein-EDT.jpg",
+      "PackagePath": "staticwebassets\\images\\Calvin Klein\\CK2\\CK-Free-calvin-klein-EDT.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Calvin Klein\\CK2\\Nuoc-Hoa-Unisex-Calvin-Klein-CK-Free.jpg",
+      "PackagePath": "staticwebassets\\images\\Calvin Klein\\CK2\\Nuoc-Hoa-Unisex-Calvin-Klein-CK-Free.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Calvin Klein\\CK2\\nuoc-hoa-nam-calvin-klein-ck-free-edt-3.jpg",
+      "PackagePath": "staticwebassets\\images\\Calvin Klein\\CK2\\nuoc-hoa-nam-calvin-klein-ck-free-edt-3.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Calvin Klein\\CK3\\images.jpg",
+      "PackagePath": "staticwebassets\\images\\Calvin Klein\\CK3\\images.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Calvin Klein\\CK3\\nuoc-hoa-Ck-Be-Calvin-Klein-edt-100ml-mifashop-5.jpg",
+      "PackagePath": "staticwebassets\\images\\Calvin Klein\\CK3\\nuoc-hoa-Ck-Be-Calvin-Klein-edt-100ml-mifashop-5.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Calvin Klein\\CK4\\nuoc_hoa_calvin_klein_ck_all_for_women___men_100ml_1_13cf9540e26e42c398c1000853a0eb6b.jpg",
+      "PackagePath": "staticwebassets\\images\\Calvin Klein\\CK4\\nuoc_hoa_calvin_klein_ck_all_for_women___men_100ml_1_13cf9540e26e42c398c1000853a0eb6b.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Calvin Klein\\CK4\\nuoc_hoa_calvin_klein_ck_all_for_women___men_100ml_2_c588827f827845a58cb756ba77f3fbd9.jpg",
+      "PackagePath": "staticwebassets\\images\\Calvin Klein\\CK4\\nuoc_hoa_calvin_klein_ck_all_for_women___men_100ml_2_c588827f827845a58cb756ba77f3fbd9.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Calvin Klein\\CK5\\calvin-klein-eternity-eau-de-perfume-spray.jpg",
+      "PackagePath": "staticwebassets\\images\\Calvin Klein\\CK5\\calvin-klein-eternity-eau-de-perfume-spray.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Calvin Klein\\CK5\\images.jpg",
+      "PackagePath": "staticwebassets\\images\\Calvin Klein\\CK5\\images.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Calvin Klein\\CK6\\27ae08bccf2c80c0a44a844ee5acdda1.jpg",
+      "PackagePath": "staticwebassets\\images\\Calvin Klein\\CK6\\27ae08bccf2c80c0a44a844ee5acdda1.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Calvin Klein\\CK6\\CK-IN2U-for-Her-1.jpg",
+      "PackagePath": "staticwebassets\\images\\Calvin Klein\\CK6\\CK-IN2U-for-Her-1.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Calvin Klein\\CK6\\model-of-c-k-in-2u-f-or-h-er-100ml.jpg",
+      "PackagePath": "staticwebassets\\images\\Calvin Klein\\CK6\\model-of-c-k-in-2u-f-or-h-er-100ml.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Calvin Klein\\CK7\\Nuoc-hoa-CK-In2u-100ml.jpg",
+      "PackagePath": "staticwebassets\\images\\Calvin Klein\\CK7\\Nuoc-hoa-CK-In2u-100ml.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Calvin Klein\\CK7\\ck-in2u-for-him-100ml.jpg",
+      "PackagePath": "staticwebassets\\images\\Calvin Klein\\CK7\\ck-in2u-for-him-100ml.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Calvin Klein\\CK8\\images.jpg",
+      "PackagePath": "staticwebassets\\images\\Calvin Klein\\CK8\\images.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Calvin Klein\\CK8\\nuoc-hoa-calvin-klein-one-edt-1.jpg",
+      "PackagePath": "staticwebassets\\images\\Calvin Klein\\CK8\\nuoc-hoa-calvin-klein-one-edt-1.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Calvin Klein\\CK9\\nuoc-hoa-nu-ck-endless-euphoria-1m4G3-embeddedcalvinkleinendlesseuphoriafragra_2jj5i8cm7b0ar_simg_d0daf0_800x1200_max.jpg",
+      "PackagePath": "staticwebassets\\images\\Calvin Klein\\CK9\\nuoc-hoa-nu-ck-endless-euphoria-1m4G3-embeddedcalvinkleinendlesseuphoriafragra_2jj5i8cm7b0ar_simg_d0daf0_800x1200_max.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Calvin Klein\\CK9\\nuoc-hoa-nu-ck-endless-euphoria-edp_img_358x358_843626_fit_center.jpg",
+      "PackagePath": "staticwebassets\\images\\Calvin Klein\\CK9\\nuoc-hoa-nu-ck-endless-euphoria-edp_img_358x358_843626_fit_center.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Calvin Klein\\CK9\\unnamed.jpg",
+      "PackagePath": "staticwebassets\\images\\Calvin Klein\\CK9\\unnamed.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Female.jpg",
+      "PackagePath": "staticwebassets\\images\\Female.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\GUCCI\\G10\\Lich-su-Gucci-Memoire-dune-Odeur.jpg",
+      "PackagePath": "staticwebassets\\images\\GUCCI\\G10\\Lich-su-Gucci-Memoire-dune-Odeur.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\GUCCI\\G10\\lux725-2_ed62da64052c4d8a993104c4fe9f5912_1024x1024.jpg",
+      "PackagePath": "staticwebassets\\images\\GUCCI\\G10\\lux725-2_ed62da64052c4d8a993104c4fe9f5912_1024x1024.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\GUCCI\\G1\\gucci-flora-gorgeous-magnolia-1_afb7f7c5fca14174b0e97d08c414363b_master.jpg",
+      "PackagePath": "staticwebassets\\images\\GUCCI\\G1\\gucci-flora-gorgeous-magnolia-1_afb7f7c5fca14174b0e97d08c414363b_master.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\GUCCI\\G1\\gucci-flora-gorgeous-magnolia-3_2bea417f79c34d1fab1a818a8c96e019_master.jpg",
+      "PackagePath": "staticwebassets\\images\\GUCCI\\G1\\gucci-flora-gorgeous-magnolia-3_2bea417f79c34d1fab1a818a8c96e019_master.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\GUCCI\\G1\\gucci-flora-gorgeous-magnolia-4_a0832ed52a4e47ad8cdf244e013aeeda_master.jpg",
+      "PackagePath": "staticwebassets\\images\\GUCCI\\G1\\gucci-flora-gorgeous-magnolia-4_a0832ed52a4e47ad8cdf244e013aeeda_master.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\GUCCI\\G1\\gucci-flora-gorgeous-magnolia-5_c1dc3f50d742459980799fcc4ab33114_master.jpg",
+      "PackagePath": "staticwebassets\\images\\GUCCI\\G1\\gucci-flora-gorgeous-magnolia-5_c1dc3f50d742459980799fcc4ab33114_master.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\GUCCI\\G2\\Gucci-A-Song-For-The-Rose-8.jpg",
+      "PackagePath": "staticwebassets\\images\\GUCCI\\G2\\Gucci-A-Song-For-The-Rose-8.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\GUCCI\\G2\\ban-tinh-ca-hoa-hong-gucci-a-song-for-the-rose_81f3bfdfcad74a5290d956ee514dbebb.jpg",
+      "PackagePath": "staticwebassets\\images\\GUCCI\\G2\\ban-tinh-ca-hoa-hong-gucci-a-song-for-the-rose_81f3bfdfcad74a5290d956ee514dbebb.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\GUCCI\\G3\\20331172610-nuoc-hoa-mini-gucci-auth.jpg",
+      "PackagePath": "staticwebassets\\images\\GUCCI\\G3\\20331172610-nuoc-hoa-mini-gucci-auth.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\GUCCI\\G3\\images.jpg",
+      "PackagePath": "staticwebassets\\images\\GUCCI\\G3\\images.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\GUCCI\\G4\\Gucci-Guilty-Black-75ml.jpg",
+      "PackagePath": "staticwebassets\\images\\GUCCI\\G4\\Gucci-Guilty-Black-75ml.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\GUCCI\\G4\\photo_2020-06-24_17-06-03-666x666-1.jpg",
+      "PackagePath": "staticwebassets\\images\\GUCCI\\G4\\photo_2020-06-24_17-06-03-666x666-1.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\GUCCI\\G5\\barashop602.jpg",
+      "PackagePath": "staticwebassets\\images\\GUCCI\\G5\\barashop602.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\GUCCI\\G5\\gucci-bloom-profumo-di-fiori_7fceb9c77163486f98ded346305517a3_master.jpg",
+      "PackagePath": "staticwebassets\\images\\GUCCI\\G5\\gucci-bloom-profumo-di-fiori_7fceb9c77163486f98ded346305517a3_master.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\GUCCI\\G6\\Nuoc-Hoa-Nam-Gucci-EDT-Pour-Homme.jpg",
+      "PackagePath": "staticwebassets\\images\\GUCCI\\G6\\Nuoc-Hoa-Nam-Gucci-EDT-Pour-Homme.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\GUCCI\\G6\\nuoc-hoa-nam-gucci-by-gucci-pour-homme-sport-edt-90ml-1.jpg",
+      "PackagePath": "staticwebassets\\images\\GUCCI\\G6\\nuoc-hoa-nam-gucci-by-gucci-pour-homme-sport-edt-90ml-1.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\GUCCI\\G7\\Gucci-Guilty-Cologne-Pour-Homme-05.jpg",
+      "PackagePath": "staticwebassets\\images\\GUCCI\\G7\\Gucci-Guilty-Cologne-Pour-Homme-05.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\GUCCI\\G7\\gucci-guilty-cologne-pour-homme-gucci-for-men_384571d096a14076b565be095330e2d9_master.jpg",
+      "PackagePath": "staticwebassets\\images\\GUCCI\\G7\\gucci-guilty-cologne-pour-homme-gucci-for-men_384571d096a14076b565be095330e2d9_master.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\GUCCI\\G8\\nuoc-hoa-gucci-a-winter-melody-scented-water-150ml_fd04d11682234322b99d6a689d347ac2_1024x1024.jpg",
+      "PackagePath": "staticwebassets\\images\\GUCCI\\G8\\nuoc-hoa-gucci-a-winter-melody-scented-water-150ml_fd04d11682234322b99d6a689d347ac2_1024x1024.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\GUCCI\\G8\\sg-11134201-22120-ddguxn57oilv7d.jpg",
+      "PackagePath": "staticwebassets\\images\\GUCCI\\G8\\sg-11134201-22120-ddguxn57oilv7d.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\GUCCI\\G9\\00136894829f3818c0717e28c1c5b812.jpg",
+      "PackagePath": "staticwebassets\\images\\GUCCI\\G9\\00136894829f3818c0717e28c1c5b812.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\GUCCI\\G9\\Nuoc-hoa-nu-Gucci-Floral-Gracious-Tuberose-EDT-50ml-chinh-hang-gia-re.jpg",
+      "PackagePath": "staticwebassets\\images\\GUCCI\\G9\\Nuoc-hoa-nu-Gucci-Floral-Gracious-Tuberose-EDT-50ml-chinh-hang-gia-re.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\GUCCI\\Gucci.docx",
+      "PackagePath": "staticwebassets\\images\\GUCCI\\Gucci.docx"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Giorgio Armani\\GA10\\images (1).jpg",
+      "PackagePath": "staticwebassets\\images\\Giorgio Armani\\GA10\\images (1).jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Giorgio Armani\\GA10\\images.jpg",
+      "PackagePath": "staticwebassets\\images\\Giorgio Armani\\GA10\\images.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Giorgio Armani\\GA1\\39eea517-25e0-4040-a68d-98c6b6a87fcb_3a67bac58ec941bdbde261c00bd82cc8.jpg",
+      "PackagePath": "staticwebassets\\images\\Giorgio Armani\\GA1\\39eea517-25e0-4040-a68d-98c6b6a87fcb_3a67bac58ec941bdbde261c00bd82cc8.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Giorgio Armani\\GA1\\Acqua-di-gio-by-Giorgio-Armani-edp.jpg",
+      "PackagePath": "staticwebassets\\images\\Giorgio Armani\\GA1\\Acqua-di-gio-by-Giorgio-Armani-edp.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Giorgio Armani\\GA2\\100194115181.jpg",
+      "PackagePath": "staticwebassets\\images\\Giorgio Armani\\GA2\\100194115181.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Giorgio Armani\\GA2\\images.jpg",
+      "PackagePath": "staticwebassets\\images\\Giorgio Armani\\GA2\\images.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Giorgio Armani\\GA3\\images (1).jpg",
+      "PackagePath": "staticwebassets\\images\\Giorgio Armani\\GA3\\images (1).jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Giorgio Armani\\GA3\\images.jpg",
+      "PackagePath": "staticwebassets\\images\\Giorgio Armani\\GA3\\images.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Giorgio Armani\\GA4\\images (1).jpg",
+      "PackagePath": "staticwebassets\\images\\Giorgio Armani\\GA4\\images (1).jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Giorgio Armani\\GA4\\images (2).jpg",
+      "PackagePath": "staticwebassets\\images\\Giorgio Armani\\GA4\\images (2).jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Giorgio Armani\\GA4\\images.jpg",
+      "PackagePath": "staticwebassets\\images\\Giorgio Armani\\GA4\\images.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Giorgio Armani\\GA4\\nuoc-hoa-giorgio-armani-my-way-edp-1625539514-c371af.jpg",
+      "PackagePath": "staticwebassets\\images\\Giorgio Armani\\GA4\\nuoc-hoa-giorgio-armani-my-way-edp-1625539514-c371af.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Giorgio Armani\\GA6\\Nuoc-hoa-Giorgio-Armani-Code-Absolu.jpg",
+      "PackagePath": "staticwebassets\\images\\Giorgio Armani\\GA6\\Nuoc-hoa-Giorgio-Armani-Code-Absolu.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Giorgio Armani\\GA6\\Nuoc-hoa-Giorgio-Armani-Code-Absolu1-600x600.jpg",
+      "PackagePath": "staticwebassets\\images\\Giorgio Armani\\GA6\\Nuoc-hoa-Giorgio-Armani-Code-Absolu1-600x600.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Giorgio Armani\\GA7\\Nuoc-hoa-Giorgio-Armani-Light-di-Gioia-edp2.jpg",
+      "PackagePath": "staticwebassets\\images\\Giorgio Armani\\GA7\\Nuoc-hoa-Giorgio-Armani-Light-di-Gioia-edp2.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Giorgio Armani\\GA7\\nuoc-hoa-chinh-hang-Light-di-Gioia.jpg",
+      "PackagePath": "staticwebassets\\images\\Giorgio Armani\\GA7\\nuoc-hoa-chinh-hang-Light-di-Gioia.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Giorgio Armani\\GA8\\armani-profondo-edp-125ml-gio-xanh-09-1000.jpg",
+      "PackagePath": "staticwebassets\\images\\Giorgio Armani\\GA8\\armani-profondo-edp-125ml-gio-xanh-09-1000.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Giorgio Armani\\GA8\\giorgio-armani-acqua-di-gio-prof.jpg",
+      "PackagePath": "staticwebassets\\images\\Giorgio Armani\\GA8\\giorgio-armani-acqua-di-gio-prof.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Giorgio Armani\\GA9\\Giorgio-Armani-Emporio-Armani-Stronger-With-You-For-Men-1.jpg",
+      "PackagePath": "staticwebassets\\images\\Giorgio Armani\\GA9\\Giorgio-Armani-Emporio-Armani-Stronger-With-You-For-Men-1.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Giorgio Armani\\GA9\\mui-huong-Giorgio-Armani-Emporio-Armani-Stronger-With-You-For-Men.jpg",
+      "PackagePath": "staticwebassets\\images\\Giorgio Armani\\GA9\\mui-huong-Giorgio-Armani-Emporio-Armani-Stronger-With-You-For-Men.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Giorgio Armani\\GIO.docx",
+      "PackagePath": "staticwebassets\\images\\Giorgio Armani\\GIO.docx"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\IZA_BANNER_5.jpg",
+      "PackagePath": "staticwebassets\\images\\IZA_BANNER_5.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Jean-Paul Gaultier\\JPG.docx",
+      "PackagePath": "staticwebassets\\images\\Jean-Paul Gaultier\\JPG.docx"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Jean-Paul Gaultier\\JPG10\\20200831_194518.jpg",
+      "PackagePath": "staticwebassets\\images\\Jean-Paul Gaultier\\JPG10\\20200831_194518.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Jean-Paul Gaultier\\JPG10\\550x626.jpg",
+      "PackagePath": "staticwebassets\\images\\Jean-Paul Gaultier\\JPG10\\550x626.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Jean-Paul Gaultier\\JPG1\\13_c153f42cf9d34aada7acda5143e8e864_master.jpg",
+      "PackagePath": "staticwebassets\\images\\Jean-Paul Gaultier\\JPG1\\13_c153f42cf9d34aada7acda5143e8e864_master.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Jean-Paul Gaultier\\JPG1\\Jean-Paul-Gaultier-Le-Male-Elixir.jpg",
+      "PackagePath": "staticwebassets\\images\\Jean-Paul Gaultier\\JPG1\\Jean-Paul-Gaultier-Le-Male-Elixir.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Jean-Paul Gaultier\\JPG2\\ingredients-gaultier-divine-edp-min_0.jpg",
+      "PackagePath": "staticwebassets\\images\\Jean-Paul Gaultier\\JPG2\\ingredients-gaultier-divine-edp-min_0.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Jean-Paul Gaultier\\JPG2\\jean-paul-gaultier-divine-eau-de-parfum-chinh-hang.jpg",
+      "PackagePath": "staticwebassets\\images\\Jean-Paul Gaultier\\JPG2\\jean-paul-gaultier-divine-eau-de-parfum-chinh-hang.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Jean-Paul Gaultier\\JPG3\\Jean-Paul-Gaultier-Le-Male-Ultra-Male-Intense_4.jpg",
+      "PackagePath": "staticwebassets\\images\\Jean-Paul Gaultier\\JPG3\\Jean-Paul-Gaultier-Le-Male-Ultra-Male-Intense_4.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Jean-Paul Gaultier\\JPG3\\images.jpg",
+      "PackagePath": "staticwebassets\\images\\Jean-Paul Gaultier\\JPG3\\images.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Jean-Paul Gaultier\\JPG4\\JEAN-P1-2.jpg",
+      "PackagePath": "staticwebassets\\images\\Jean-Paul Gaultier\\JPG4\\JEAN-P1-2.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Jean-Paul Gaultier\\JPG4\\Jean-Paul-Gaultier-Scandal-By-Night-EDP-Intense-30ml.jpg",
+      "PackagePath": "staticwebassets\\images\\Jean-Paul Gaultier\\JPG4\\Jean-Paul-Gaultier-Scandal-By-Night-EDP-Intense-30ml.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Jean-Paul Gaultier\\JPG4\\Nuoc-Hoa-Nu-Jean-Paul-Gaultier-Scandal-By-Night.jpg",
+      "PackagePath": "staticwebassets\\images\\Jean-Paul Gaultier\\JPG4\\Nuoc-Hoa-Nu-Jean-Paul-Gaultier-Scandal-By-Night.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Jean-Paul Gaultier\\JPG5\\download.jpg",
+      "PackagePath": "staticwebassets\\images\\Jean-Paul Gaultier\\JPG5\\download.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Jean-Paul Gaultier\\JPG5\\jean-paul-gaultier-le-beau-paradise-garden-125ml_9129b7abbeec4a27a607eb62fd7fa3af_master.jpg",
+      "PackagePath": "staticwebassets\\images\\Jean-Paul Gaultier\\JPG5\\jean-paul-gaultier-le-beau-paradise-garden-125ml_9129b7abbeec4a27a607eb62fd7fa3af_master.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Jean-Paul Gaultier\\JPG5\\unnamed.jpg",
+      "PackagePath": "staticwebassets\\images\\Jean-Paul Gaultier\\JPG5\\unnamed.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Jean-Paul Gaultier\\JPG6\\images.jpg",
+      "PackagePath": "staticwebassets\\images\\Jean-Paul Gaultier\\JPG6\\images.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Jean-Paul Gaultier\\JPG6\\jean-paul-gaultier-women-wonder-woman-eau-fraiche-spray-limited-edition-3-4-oz-100-ml.jpg",
+      "PackagePath": "staticwebassets\\images\\Jean-Paul Gaultier\\JPG6\\jean-paul-gaultier-women-wonder-woman-eau-fraiche-spray-limited-edition-3-4-oz-100-ml.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Jean-Paul Gaultier\\JPG7\\images (1).jpg",
+      "PackagePath": "staticwebassets\\images\\Jean-Paul Gaultier\\JPG7\\images (1).jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Jean-Paul Gaultier\\JPG7\\scandal-pour-homme-le-parfum.jpg",
+      "PackagePath": "staticwebassets\\images\\Jean-Paul Gaultier\\JPG7\\scandal-pour-homme-le-parfum.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Jean-Paul Gaultier\\JPG8\\L-a-Be-lle-L-e-Par-fum.jpg",
+      "PackagePath": "staticwebassets\\images\\Jean-Paul Gaultier\\JPG8\\L-a-Be-lle-L-e-Par-fum.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Jean-Paul Gaultier\\JPG8\\thiet-ke-jean-paul-gaultier-la-belle-le-parfum.jpg",
+      "PackagePath": "staticwebassets\\images\\Jean-Paul Gaultier\\JPG8\\thiet-ke-jean-paul-gaultier-la-belle-le-parfum.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Jean-Paul Gaultier\\JPG9\\model-le-ma-le-2.jpg",
+      "PackagePath": "staticwebassets\\images\\Jean-Paul Gaultier\\JPG9\\model-le-ma-le-2.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Jean-Paul Gaultier\\JPG9\\nuoc-hoa-nam-jean-paul-gaultier-le-male-on-board-edt-4.jpg",
+      "PackagePath": "staticwebassets\\images\\Jean-Paul Gaultier\\JPG9\\nuoc-hoa-nam-jean-paul-gaultier-le-male-on-board-edt-4.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\LogoPerfumesShop.jpg",
+      "PackagePath": "staticwebassets\\images\\LogoPerfumesShop.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Man.jpg",
+      "PackagePath": "staticwebassets\\images\\Man.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Marc Jacos\\MJ.docx",
+      "PackagePath": "staticwebassets\\images\\Marc Jacos\\MJ.docx"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Marc Jacos\\MJ10\\17_marc_jacobs_decadence_eau_so_decadent_3dcff069c29d4e5f89b85ea8ba7df42f.jpg",
+      "PackagePath": "staticwebassets\\images\\Marc Jacos\\MJ10\\17_marc_jacobs_decadence_eau_so_decadent_3dcff069c29d4e5f89b85ea8ba7df42f.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Marc Jacos\\MJ10\\Nuoc-hoa-Marc-Jacobs-Decadence-Eau-So-Decadent3.jpg",
+      "PackagePath": "staticwebassets\\images\\Marc Jacos\\MJ10\\Nuoc-hoa-Marc-Jacobs-Decadence-Eau-So-Decadent3.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Marc Jacos\\MJ10\\marc-jacobs-eau-so-decadent-edt__10__2de1947f3c194bf58134004fa6c7bbad_grande.jpg",
+      "PackagePath": "staticwebassets\\images\\Marc Jacos\\MJ10\\marc-jacobs-eau-so-decadent-edt__10__2de1947f3c194bf58134004fa6c7bbad_grande.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Marc Jacos\\MJ1\\Favim.ru-2118569.jpg",
+      "PackagePath": "staticwebassets\\images\\Marc Jacos\\MJ1\\Favim.ru-2118569.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Marc Jacos\\MJ1\\MJ-daisy-dream-first-pdp-image.jpg",
+      "PackagePath": "staticwebassets\\images\\Marc Jacos\\MJ1\\MJ-daisy-dream-first-pdp-image.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Marc Jacos\\MJ1\\Marc-Jacobs-Daisy-Dream.jpg",
+      "PackagePath": "staticwebassets\\images\\Marc Jacos\\MJ1\\Marc-Jacobs-Daisy-Dream.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Marc Jacos\\MJ2\\images (1).jpg",
+      "PackagePath": "staticwebassets\\images\\Marc Jacos\\MJ2\\images (1).jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Marc Jacos\\MJ2\\images.jpg",
+      "PackagePath": "staticwebassets\\images\\Marc Jacos\\MJ2\\images.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Marc Jacos\\MJ3\\figure-1683052641894.jpg",
+      "PackagePath": "staticwebassets\\images\\Marc Jacos\\MJ3\\figure-1683052641894.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Marc Jacos\\MJ3\\images.jpg",
+      "PackagePath": "staticwebassets\\images\\Marc Jacos\\MJ3\\images.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Marc Jacos\\MJ3\\marc-jacobs-perfect-eau-de-toilette-q1lycphlkzrm.jpg",
+      "PackagePath": "staticwebassets\\images\\Marc Jacos\\MJ3\\marc-jacobs-perfect-eau-de-toilette-q1lycphlkzrm.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Marc Jacos\\MJ4\\Marc-Jacobs-Daisy-Dream-Forever-1.jpg",
+      "PackagePath": "staticwebassets\\images\\Marc Jacos\\MJ4\\Marc-Jacobs-Daisy-Dream-Forever-1.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Marc Jacos\\MJ4\\images (1).jpg",
+      "PackagePath": "staticwebassets\\images\\Marc Jacos\\MJ4\\images (1).jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Marc Jacos\\MJ4\\images.jpg",
+      "PackagePath": "staticwebassets\\images\\Marc Jacos\\MJ4\\images.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Marc Jacos\\MJ5\\unnamed.jpg",
+      "PackagePath": "staticwebassets\\images\\Marc Jacos\\MJ5\\unnamed.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Marc Jacos\\MJ5\\vn-11134207-7qukw-lk15gq89vqus41.jpg",
+      "PackagePath": "staticwebassets\\images\\Marc Jacos\\MJ5\\vn-11134207-7qukw-lk15gq89vqus41.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Marc Jacos\\MJ6\\Marc-Jacobs-Daisy-Love-Eau-de-Toilette-4.jpg",
+      "PackagePath": "staticwebassets\\images\\Marc Jacos\\MJ6\\Marc-Jacobs-Daisy-Love-Eau-de-Toilette-4.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Marc Jacos\\MJ6\\mj-daisy-love-olfactive-v2.jpg",
+      "PackagePath": "staticwebassets\\images\\Marc Jacos\\MJ6\\mj-daisy-love-olfactive-v2.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Marc Jacos\\MJ6\\nuoc-hoa-marc-jacobs-daisy-love.jpg",
+      "PackagePath": "staticwebassets\\images\\Marc Jacos\\MJ6\\nuoc-hoa-marc-jacobs-daisy-love.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Marc Jacos\\MJ7\\images (1).jpg",
+      "PackagePath": "staticwebassets\\images\\Marc Jacos\\MJ7\\images (1).jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Marc Jacos\\MJ7\\images.jpg",
+      "PackagePath": "staticwebassets\\images\\Marc Jacos\\MJ7\\images.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Marc Jacos\\MJ7\\vn-11134207-7qukw-lk52ym5nkbgi42.jpg",
+      "PackagePath": "staticwebassets\\images\\Marc Jacos\\MJ7\\vn-11134207-7qukw-lk52ym5nkbgi42.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Marc Jacos\\MJ8\\20326---new.jpg",
+      "PackagePath": "staticwebassets\\images\\Marc Jacos\\MJ8\\20326---new.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Marc Jacos\\MJ8\\Nuoc-hoa-Marc-Jacobs-Honey-edp3.jpg",
+      "PackagePath": "staticwebassets\\images\\Marc Jacos\\MJ8\\Nuoc-hoa-Marc-Jacobs-Honey-edp3.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Marc Jacos\\MJ9\\images (1).jpg",
+      "PackagePath": "staticwebassets\\images\\Marc Jacos\\MJ9\\images (1).jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Marc Jacos\\MJ9\\images.jpg",
+      "PackagePath": "staticwebassets\\images\\Marc Jacos\\MJ9\\images.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Marc Jacos\\MJ9\\maxresdefault.jpg",
+      "PackagePath": "staticwebassets\\images\\Marc Jacos\\MJ9\\maxresdefault.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Marc Jacos\\MJ9\\nuoc-hoa-nu-marcjacobs-4.jpg",
+      "PackagePath": "staticwebassets\\images\\Marc Jacos\\MJ9\\nuoc-hoa-nu-marcjacobs-4.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Unisex.jpg",
+      "PackagePath": "staticwebassets\\images\\Unisex.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Versace\\V.docx",
+      "PackagePath": "staticwebassets\\images\\Versace\\V.docx"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Versace\\V10\\51y1oqKYUjL.jpg",
+      "PackagePath": "staticwebassets\\images\\Versace\\V10\\51y1oqKYUjL.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Versace\\V10\\Versace-Crystal-Noir-EDT-2.jpg",
+      "PackagePath": "staticwebassets\\images\\Versace\\V10\\Versace-Crystal-Noir-EDT-2.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Versace\\V10\\nuoc-hoa-versace-crystal-noir-eau-de-toilette-90ml.jpg",
+      "PackagePath": "staticwebassets\\images\\Versace\\V10\\nuoc-hoa-versace-crystal-noir-eau-de-toilette-90ml.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Versace\\V1\\Versace-Man-Eau-Fraiche-EDT-3.jpg",
+      "PackagePath": "staticwebassets\\images\\Versace\\V1\\Versace-Man-Eau-Fraiche-EDT-3.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Versace\\V1\\images.jpg",
+      "PackagePath": "staticwebassets\\images\\Versace\\V1\\images.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Versace\\V2\\Nuoc-Hoa-Nam-Versace-Eros-Flame-EDP-1-1.jpg",
+      "PackagePath": "staticwebassets\\images\\Versace\\V2\\Nuoc-Hoa-Nam-Versace-Eros-Flame-EDP-1-1.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Versace\\V2\\eros-flame-versace.jpg",
+      "PackagePath": "staticwebassets\\images\\Versace\\V2\\eros-flame-versace.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Versace\\V2\\sg-11134201-22110-ilhidtwlq6jv5c.jpg",
+      "PackagePath": "staticwebassets\\images\\Versace\\V2\\sg-11134201-22110-ilhidtwlq6jv5c.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Versace\\V3\\Nuoc-Hoa-Versace-Eros-Eau-De-Parfum-mifashop-1.jpg",
+      "PackagePath": "staticwebassets\\images\\Versace\\V3\\Nuoc-Hoa-Versace-Eros-Eau-De-Parfum-mifashop-1.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Versace\\V3\\kiotviet_94472fb707d60a3954026d60bf87cbb7.jpg",
+      "PackagePath": "staticwebassets\\images\\Versace\\V3\\kiotviet_94472fb707d60a3954026d60bf87cbb7.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Versace\\V4\\DYLAN-TURQUOISE-02-01-img-150920-desk-new.jpg",
+      "PackagePath": "staticwebassets\\images\\Versace\\V4\\DYLAN-TURQUOISE-02-01-img-150920-desk-new.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Versace\\V4\\VERSACE-POUR-FEMME-DYLAN-TURQUOISE-001.jpg",
+      "PackagePath": "staticwebassets\\images\\Versace\\V4\\VERSACE-POUR-FEMME-DYLAN-TURQUOISE-001.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Versace\\V4\\nuoc-hoa-nu-versace-pour-femme-dylan-turquoise-edt-100ml-kb.jpg",
+      "PackagePath": "staticwebassets\\images\\Versace\\V4\\nuoc-hoa-nu-versace-pour-femme-dylan-turquoise-edt-100ml-kb.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Versace\\V5\\Nuoc-Hoa-Versace-Dylan-Purple-edp3.jpg",
+      "PackagePath": "staticwebassets\\images\\Versace\\V5\\Nuoc-Hoa-Versace-Dylan-Purple-edp3.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Versace\\V5\\images.jpg",
+      "PackagePath": "staticwebassets\\images\\Versace\\V5\\images.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Versace\\V5\\s2657567-av-4-zoom_e37b284b721a475bbbf7ec7ca2e7dcc4_master.jpg",
+      "PackagePath": "staticwebassets\\images\\Versace\\V5\\s2657567-av-4-zoom_e37b284b721a475bbbf7ec7ca2e7dcc4_master.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Versace\\V6\\Versace-Blue-Jeans.jpg",
+      "PackagePath": "staticwebassets\\images\\Versace\\V6\\Versace-Blue-Jeans.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Versace\\V6\\versace-blue-jeans-edt.jpg",
+      "PackagePath": "staticwebassets\\images\\Versace\\V6\\versace-blue-jeans-edt.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Versace\\V6\\versace-jeans-blue-edt-75ml-iAZhmg2PoMhBAK63-mfparis.jpg",
+      "PackagePath": "staticwebassets\\images\\Versace\\V6\\versace-jeans-blue-edt-75ml-iAZhmg2PoMhBAK63-mfparis.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Versace\\V7\\nuoc-hoa-nam-versace-pour-homme-100-ml-1.jpg",
+      "PackagePath": "staticwebassets\\images\\Versace\\V7\\nuoc-hoa-nam-versace-pour-homme-100-ml-1.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Versace\\V7\\pour-homme-versace.jpg",
+      "PackagePath": "staticwebassets\\images\\Versace\\V7\\pour-homme-versace.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Versace\\V7\\unnamed.jpg",
+      "PackagePath": "staticwebassets\\images\\Versace\\V7\\unnamed.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Versace\\V8\\5287b7e320601dc41bdc09b35653c74f.jpg_720x720q80.jpg",
+      "PackagePath": "staticwebassets\\images\\Versace\\V8\\5287b7e320601dc41bdc09b35653c74f.jpg_720x720q80.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Versace\\V8\\Versace-Bright-Crystal-90ml.jpg",
+      "PackagePath": "staticwebassets\\images\\Versace\\V8\\Versace-Bright-Crystal-90ml.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Versace\\V8\\images.jpg",
+      "PackagePath": "staticwebassets\\images\\Versace\\V8\\images.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Versace\\V9\\Nuoc-Hoa-Versace-Man-Eau-Fraiche-mifashop-1.jpg",
+      "PackagePath": "staticwebassets\\images\\Versace\\V9\\Nuoc-Hoa-Versace-Man-Eau-Fraiche-mifashop-1.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Versace\\V9\\b986e01006775683862eac9d6bbe34cd8f314c88.jpg",
+      "PackagePath": "staticwebassets\\images\\Versace\\V9\\b986e01006775683862eac9d6bbe34cd8f314c88.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\Versace\\V9\\images.jpg",
+      "PackagePath": "staticwebassets\\images\\Versace\\V9\\images.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\avt.jpg",
+      "PackagePath": "staticwebassets\\images\\avt.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\banana.png",
+      "PackagePath": "staticwebassets\\images\\banana.png"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\bg.jpg",
+      "PackagePath": "staticwebassets\\images\\bg.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\deal.jpg",
+      "PackagePath": "staticwebassets\\images\\deal.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\diamond.jpg",
+      "PackagePath": "staticwebassets\\images\\diamond.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\gold.jpg",
+      "PackagePath": "staticwebassets\\images\\gold.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\mastercard.png",
+      "PackagePath": "staticwebassets\\images\\mastercard.png"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\momo.png",
+      "PackagePath": "staticwebassets\\images\\momo.png"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\nhan.jpg",
+      "PackagePath": "staticwebassets\\images\\nhan.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\nhan2.jpg",
+      "PackagePath": "staticwebassets\\images\\nhan2.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\platinum.jpg",
+      "PackagePath": "staticwebassets\\images\\platinum.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\tien.png",
+      "PackagePath": "staticwebassets\\images\\tien.png"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\images\\visa.jpg",
+      "PackagePath": "staticwebassets\\images\\visa.jpg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\js\\code.jquery.com_jquery-3.7.0.min.js",
+      "PackagePath": "staticwebassets\\js\\code.jquery.com_jquery-3.7.0.min.js"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\js\\scripts.js"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\js\\swiper-bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\swiper-bundle.min.js"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\Isotope\\isotope.pkgd.min.js",
+      "PackagePath": "staticwebassets\\plugins\\Isotope\\isotope.pkgd.min.js"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\OwlCarousel2-2.2.1\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\plugins\\OwlCarousel2-2.2.1\\ajax-loader.gif"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\OwlCarousel2-2.2.1\\animate.css",
+      "PackagePath": "staticwebassets\\plugins\\OwlCarousel2-2.2.1\\animate.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\OwlCarousel2-2.2.1\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\plugins\\OwlCarousel2-2.2.1\\owl.carousel.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\OwlCarousel2-2.2.1\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\plugins\\OwlCarousel2-2.2.1\\owl.carousel.js"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\OwlCarousel2-2.2.1\\owl.theme.default.css",
+      "PackagePath": "staticwebassets\\plugins\\OwlCarousel2-2.2.1\\owl.theme.default.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\OwlCarousel2-2.2.1\\owl.video.play.png",
+      "PackagePath": "staticwebassets\\plugins\\OwlCarousel2-2.2.1\\owl.video.play.png"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\easing\\easing.js",
+      "PackagePath": "staticwebassets\\plugins\\easing\\easing.js"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\HELP-US-OUT.txt",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\HELP-US-OUT.txt"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\css\\font-awesome.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\less\\animated.less",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\less\\animated.less"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\less\\bordered-pulled.less",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\less\\bordered-pulled.less"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\less\\core.less",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\less\\core.less"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\less\\fixed-width.less",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\less\\fixed-width.less"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\less\\font-awesome.less",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\less\\font-awesome.less"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\less\\icons.less",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\less\\icons.less"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\less\\larger.less",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\less\\larger.less"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\less\\list.less",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\less\\list.less"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\less\\mixins.less",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\less\\mixins.less"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\less\\path.less",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\less\\path.less"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\less\\rotated-flipped.less",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\less\\rotated-flipped.less"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\less\\screen-reader.less",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\less\\screen-reader.less"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\less\\stacked.less",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\less\\stacked.less"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\less\\variables.less",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\less\\variables.less"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\scss\\_animated.scss",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\scss\\_animated.scss"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\scss\\_bordered-pulled.scss",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\scss\\_bordered-pulled.scss"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\scss\\_core.scss",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\scss\\_core.scss"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\scss\\_fixed-width.scss",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\scss\\_fixed-width.scss"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\scss\\_icons.scss",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\scss\\_icons.scss"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\scss\\_larger.scss",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\scss\\_larger.scss"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\scss\\_list.scss",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\scss\\_list.scss"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\scss\\_path.scss",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\scss\\_path.scss"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\scss\\_rotated-flipped.scss",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\scss\\_rotated-flipped.scss"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\scss\\_screen-reader.scss",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\scss\\_screen-reader.scss"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\scss\\_stacked.scss",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\scss\\_stacked.scss"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\scss\\_variables.scss"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\font-awesome-4.7.0\\scss\\font-awesome.scss",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\scss\\font-awesome.scss"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\jquery-ui-1.12.1.custom\\jquery-ui.css",
+      "PackagePath": "staticwebassets\\plugins\\jquery-ui-1.12.1.custom\\jquery-ui.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\jquery-ui-1.12.1.custom\\jquery-ui.js",
+      "PackagePath": "staticwebassets\\plugins\\jquery-ui-1.12.1.custom\\jquery-ui.js"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\themify-icons\\fonts\\themify.eot",
+      "PackagePath": "staticwebassets\\plugins\\themify-icons\\fonts\\themify.eot"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\themify-icons\\fonts\\themify.svg",
+      "PackagePath": "staticwebassets\\plugins\\themify-icons\\fonts\\themify.svg"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\themify-icons\\fonts\\themify.ttf",
+      "PackagePath": "staticwebassets\\plugins\\themify-icons\\fonts\\themify.ttf"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\themify-icons\\fonts\\themify.woff",
+      "PackagePath": "staticwebassets\\plugins\\themify-icons\\fonts\\themify.woff"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\plugins\\themify-icons\\themify-icons.css",
+      "PackagePath": "staticwebassets\\plugins\\themify-icons\\themify-icons.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\styles\\bootstrap4\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\styles\\bootstrap4\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\styles\\bootstrap4\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\styles\\bootstrap4\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\styles\\bootstrap4\\popper.js",
+      "PackagePath": "staticwebassets\\styles\\bootstrap4\\popper.js"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\styles\\cart.css",
+      "PackagePath": "staticwebassets\\styles\\cart.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\styles\\categories_responsive.css",
+      "PackagePath": "staticwebassets\\styles\\categories_responsive.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\styles\\categories_styles.css",
+      "PackagePath": "staticwebassets\\styles\\categories_styles.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\styles\\contact_responsive.css",
+      "PackagePath": "staticwebassets\\styles\\contact_responsive.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\styles\\contact_styles.css",
+      "PackagePath": "staticwebassets\\styles\\contact_styles.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\styles\\login.css",
+      "PackagePath": "staticwebassets\\styles\\login.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\styles\\main_styles.css",
+      "PackagePath": "staticwebassets\\styles\\main_styles.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\styles\\register.css",
+      "PackagePath": "staticwebassets\\styles\\register.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\styles\\responsive.css",
+      "PackagePath": "staticwebassets\\styles\\responsive.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\styles\\single_responsive.css",
+      "PackagePath": "staticwebassets\\styles\\single_responsive.css"
+    },
+    {
+      "Id": "D:\\PRN211\\PRN211_Perfumes_Store_Version3.0\\PRN211_Perfumes_Store\\PRN211_Perfumes_Store\\PerfumesStore\\wwwroot\\styles\\single_styles.css",
+      "PackagePath": "staticwebassets\\styles\\single_styles.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.PerfumesStore.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.PerfumesStore.props",
+      "PackagePath": "build\\PerfumesStore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.PerfumesStore.props",
+      "PackagePath": "buildMultiTargeting\\PerfumesStore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.PerfumesStore.props",
+      "PackagePath": "buildTransitive\\PerfumesStore.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

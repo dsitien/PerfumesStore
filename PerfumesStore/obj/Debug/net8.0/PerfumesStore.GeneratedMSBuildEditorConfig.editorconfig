@@ -1,0 +1,223 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PerfumesStore
+build_property.RootNamespace = PerfumesStore
+build_property.ProjectDir = D:\PRN211\PRN211_Perfumes_Store_Version3.0\PRN211_Perfumes_Store\PRN211_Perfumes_Store\PerfumesStore\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\PRN211\PRN211_Perfumes_Store_Version3.0\PRN211_Perfumes_Store\PRN211_Perfumes_Store\PerfumesStore
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Admin/AccountManager/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQWNjb3VudE1hbmFnZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Admin/AccountManager/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQWNjb3VudE1hbmFnZXJcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Admin/AccountManager/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQWNjb3VudE1hbmFnZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Admin/AccountManager/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQWNjb3VudE1hbmFnZXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Admin/AccountManager/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQWNjb3VudE1hbmFnZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Admin/BrandManager/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQnJhbmRNYW5hZ2VyXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Admin/BrandManager/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQnJhbmRNYW5hZ2VyXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Admin/BrandManager/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQnJhbmRNYW5hZ2VyXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Admin/BrandManager/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQnJhbmRNYW5hZ2VyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Admin/BrandManager/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQnJhbmRNYW5hZ2VyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Admin/CategoryManager/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ2F0ZWdvcnlNYW5hZ2VyXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Admin/CategoryManager/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ2F0ZWdvcnlNYW5hZ2VyXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Admin/CategoryManager/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ2F0ZWdvcnlNYW5hZ2VyXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Admin/CategoryManager/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ2F0ZWdvcnlNYW5hZ2VyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Admin/CategoryManager/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ2F0ZWdvcnlNYW5hZ2VyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Admin/DashBoard/dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRGFzaEJvYXJkXGRhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Admin/OrderManager/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cT3JkZXJNYW5hZ2VyXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Admin/OrderManager/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cT3JkZXJNYW5hZ2VyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Admin/OrderManager/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cT3JkZXJNYW5hZ2VyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Admin/ProductManager/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZHVjdE1hbmFnZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Admin/ProductManager/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZHVjdE1hbmFnZXJcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Admin/ProductManager/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZHVjdE1hbmFnZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Admin/ProductManager/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZHVjdE1hbmFnZXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Admin/ProductManager/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZHVjdE1hbmFnZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Cart/ViewCart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FydFxWaWV3Q2FydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Chat/Chat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hhdFxDaGF0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Checkout/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hlY2tvdXRcQ2hlY2tvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/ForgotPassword/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9yZ290UGFzc3dvcmRcRm9yZ290UGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Home/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVxIb21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Login/login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5cbG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Logout/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nb3V0XExvZ291dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Orders/OrderDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJzXE9yZGVyRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Orders/ViewOrders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJzXFZpZXdPcmRlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Partials/_FooterPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFydGlhbHNcX0Zvb3RlclBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Partials/_HeaderPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFydGlhbHNcX0hlYWRlclBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Products/ProductDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcUHJvZHVjdERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Profile/EditProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZVxFZGl0UHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Profile/ViewProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZVxWaWV3UHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Register/register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXJccmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Register/RegisterVerify.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXJcUmVnaXN0ZXJWZXJpZnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Shop/Shop.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hvcFxTaG9wLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/_ProductListPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1Byb2R1Y3RMaXN0UGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN211/PRN211_Perfumes_Store_Version3.0/PRN211_Perfumes_Store/PRN211_Perfumes_Store/PerfumesStore/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-l9hxqx9fpu

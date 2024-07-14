@@ -1,0 +1,201 @@
+﻿@page
+@model PerfumesStore.Pages.Admin.ProductManager.IndexModel
+
+@{
+    Layout = null;
+    ViewData["Title"] = "Product Management";
+}
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #ffecd2, #fcb69f);
+    }
+
+    /* Container for the whole page */
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    h1 {
+        color: #333;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    /* Styling for the form */
+    .form-group {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+        .form-group input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .form-group input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #009879;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+            .form-group input[type="submit"]:hover {
+                background-color: #007d63;
+            }
+
+    /* Action buttons styling */
+    .action-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+        .action-buttons a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #009879;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+            .action-buttons a:hover {
+                background-color: #007d63;
+            }
+
+    /* Table styling */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 16px;
+        text-align: left;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+        table th, table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        table thead th {
+            background-color: #009879;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        table tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+    /* Styling for the product image */
+    .product-img {
+        width: 100px;
+        height: auto;
+        border-radius: 5px;
+        object-fit: cover;
+    }
+
+    /* Link styling inside table */
+    table a {
+        color: #009879;
+        text-decoration: none;
+    }
+
+        table a:hover {
+            text-decoration: underline;
+        }
+</style>
+
+<div class="container">
+    <h1>Product Management</h1>
+
+    <form method="get">
+        <div class="form-group">
+            <input type="text" name="searchString" value="@Model.CurrentFilter" placeholder="Search..." />
+            <input type="submit" value="Search" class="btn btn-default" />
+        </div>
+    </form>
+
+    <div class="action-buttons">
+        <a asp-page="Create">Create New</a>
+        <a asp-page="/Admin/DashBoard/dashboard">Back to Manager Page</a>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Products[0].Category.CategoryName)</th>
+                <th>@Html.DisplayNameFor(model => model.Products[0].Brand.BrandName)</th>
+                <th>@Html.DisplayNameFor(model => model.Products[0].ProductName)</th>
+                <th>@Html.DisplayNameFor(model => model.Products[0].Price)</th>
+                <th>@Html.DisplayNameFor(model => model.Products[0].Description)</th>
+                <th>@Html.DisplayNameFor(model => model.Products[0].ProductImg)</th>
+                <th>@Html.DisplayNameFor(model => model.Products[0].Stock)</th>
+                <th>@Html.DisplayNameFor(model => model.Products[0].Status)</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Products)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Category.CategoryName)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Brand.BrandName)</td>
+                    <td>@Html.DisplayFor(modelItem => item.ProductName)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Price)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Description)</td>
+
+                    <td>
+                        @if (item.ProductImg != null && item.ProductImg.Length > 0)
+                        {
+                            string imageBase64 = Convert.ToBase64String(item.ProductImg);
+                            string imageSrc = $"data:image/jpeg;base64,{imageBase64}";
+                            <img src="@imageSrc" alt="Product Image" class="product-img" />
+                        }
+                        else
+                        {
+                            <span>No Image Available</span>
+                        }
+                    </td>
+                    <td>@Html.DisplayFor(modelItem => item.Stock)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Status)</td>
+                    <td>
+                        <a asp-page="./Edit" asp-route-id="@item.ProductId">Edit</a> |
+                        <a asp-page="./Details" asp-route-id="@item.ProductId">Details</a> |
+                        <a asp-page="./Delete" asp-route-id="@item.ProductId">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div class="pagination">
+        @if (Model.Products.HasPreviousPage)
+        {
+            <a asp-page="./Index" asp-route-sortOrder="@Model.CurrentSort"
+               asp-route-searchString="@Model.CurrentFilter"
+               asp-route-pageIndex="@(Model.Products.PageIndex - 1)">Previous</a>
+        }
+        @if (Model.Products.HasNextPage)
+        {
+            <a asp-page="./Index" asp-route-sortOrder="@Model.CurrentSort"
+               asp-route-searchString="@Model.CurrentFilter"
+               asp-route-pageIndex="@(Model.Products.PageIndex + 1)">Next</a>
+        }
+    </div>
+</div>

@@ -1,0 +1,284 @@
+﻿@page "{id:int}"
+@model PerfumesStore.Pages.Products.ProductDetailsModel
+@{
+    ViewData["Title"] = "Product Details";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Single Product</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Colo Shop Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="/styles/bootstrap4/bootstrap.min.css">
+    <link href="~/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="~/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="~/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="~/plugins/OwlCarousel2-2.2.1/animate.css">
+
+    <link rel="stylesheet" href="~/plugins/themify-icons/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="~/plugins/jquery-ui-1.12.1.custom/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="~/styles/single_styles.css">
+    <link rel="stylesheet" type="text/css" href="~/styles/single_responsive.css">
+
+    <link rel="stylesheet" type="text/css" href="~/styles/main_styles.css">
+    <link rel="stylesheet" type="text/css" href="~/styles/responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .countdown-circle {
+            position: relative;
+            width: 60px; /* Adjust width to match SVG width */
+            height: 60px; /* Adjust height to match SVG height */
+            margin: auto;
+            text-align: center;
+        }
+
+        .progress-ring {
+            transform: rotate(-90deg);
+        }
+
+        .progress-ring-circle {
+            stroke: #3498db;
+            transition: stroke-dashoffset 1s linear;
+            transform: translate(3px, 3px); /* Adjust position */
+            transform-origin: 50% 50%;
+            stroke-dasharray: 125.6; /* Adjust based on the new circle radius */
+            stroke-dashoffset: 0;
+        }
+
+        .countdown-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 16px; /* Adjust font size */
+            color: #3498db;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="super_container">
+          
+        @await Html.PartialAsync("Partials/_HeaderPartial", Model)
+
+        <div class="container single_product_container">
+            <div class="row">
+                <div class="col">
+
+                    <!-- Breadcrumbs -->
+
+                    <div class="breadcrumbs d-flex flex-row align-items-center">
+                        <ul>
+                            <li><a asp-action="Index" asp-controller="Product">Home</a></li>
+                            <li class="active"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>@Html.DisplayFor(model => model.Product.ProductName)</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="single_product_pics">
+                        <div class="row">
+                            <div class="col-lg-3 thumbnails_col order-lg-1 order-2">
+                                @if (Model.Product.ProductImg != null && Model.Product.ProductImg.Length > 0)
+                                {
+                                    string imageBase64 = Convert.ToBase64String(Model.Product.ProductImg);
+                                    string imageSrc = $"data:image/jpeg;base64,{imageBase64}";
+                                    <a asp-page="/Products/ProductDetails" asp-route-id="@Model.Product.ProductId">
+                                        <img style="max-width: 500px; max-height: 500px;" src="@imageSrc" alt="Product Image" />
+                                    </a>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+
+                    <div class="product_details">
+                        <div class="product_details_title">
+
+                            @if (!string.IsNullOrEmpty(TempData["Message"] as string))
+                            {
+                                <div id="tempMessage" class="alert alert-info">
+                                    <div>@TempData["Message"]</div>
+                                    <div class="countdown-circle">
+                                        <svg class="progress-ring" width="60" height="60">
+                                            <circle class="progress-ring-circle" stroke-width="4" fill="transparent" r="20" cx="30" cy="30"></circle>
+                                        </svg>
+                                        <div class="countdown-text">5</div>
+                                    </div>
+                                </div>
+                            }
+
+
+                            <h2> @Html.DisplayFor(model => model.Product.ProductName)</h2>
+                            <p> @Html.DisplayFor(model => model.Product.ProductName) Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque diam dolor, elementum etos lobortis des mollis ut...</p>
+                            <p>Stock Quantity:  @Model.Product.Stock</p>
+                        
+                        </div>
+                        <div class="quantity_selector">
+                            <span class="minus">-</span>
+                            <span class="quantity">1</span>
+                            <span class="plus">+</span>
+                        </div>
+
+                        @if (!string.IsNullOrEmpty(TempData["FailMessage"] as string))
+                        {
+                            <div id="tempMessage" class="alert alert-danger">
+                                <div>@TempData["FailMessage"]</div>
+                            </div>
+                        }
+                        <div class="free_delivery d-flex flex-row align-items-center justify-content-center">
+                            <span class="ti-truck"></span><span>free delivery</span>
+                        </div>
+                        @if (Model.Product.Price > 0)
+                        {
+                            decimal discountedPrice = Model.Product.Price / 0.8m;
+                            <div class="product_price">
+                            </div>
+                            <div class="original_price">$@discountedPrice</div>
+                            <div class="product_price">$@Html.DisplayFor(modelItem => Model.Product.Price)</div>
+                            <form method="post">
+                                <input type="hidden" id="productId" name="productId" value="@Model.Product.ProductId" />
+                                <input type="hidden" id="quantity_input" name="quantity" value="1" />
+                                <button type="submit" class="red_button ">Add To Cart</button>
+                            </form>
+                        }
+
+
+
+                    </div>
+
+                </div>
+            </div>
+           
+        </div>
+
+
+
+        <!-- Benefit -->
+
+        <div class="benefit">
+            <div class="container">
+                <div class="row benefit_row">
+                    <div class="col-lg-3 benefit_col">
+                        <div class="benefit_item d-flex flex-row align-items-center">
+                            <div class="benefit_icon"><i class="fa fa-truck" aria-hidden="true"></i></div>
+                            <div class="benefit_content">
+                                <h6>free shipping</h6>
+                                <p>Suffered Alteration in Some Form</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 benefit_col">
+                        <div class="benefit_item d-flex flex-row align-items-center">
+                            <div class="benefit_icon"><i class="fa fa-money" aria-hidden="true"></i></div>
+                            <div class="benefit_content">
+                                <h6>cach on delivery</h6>
+                                <p>The Internet Tend To Repeat</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 benefit_col">
+                        <div class="benefit_item d-flex flex-row align-items-center">
+                            <div class="benefit_icon"><i class="fa fa-undo" aria-hidden="true"></i></div>
+                            <div class="benefit_content">
+                                <h6>45 days return</h6>
+                                <p>Making it Look Like Readable</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 benefit_col">
+                        <div class="benefit_item d-flex flex-row align-items-center">
+                            <div class="benefit_icon"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+                            <div class="benefit_content">
+                                <h6>opening all week</h6>
+                                <p>8AM - 09PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        @await Html.PartialAsync("Partials/_FooterPartial", Model)
+
+    </div>
+
+    <script src="~/js/jquery-3.2.1.min.js"></script>
+    <script src="~/styles/bootstrap4/popper.js"></script>
+    <script src="~/styles/bootstrap4/bootstrap.min.js"></script>
+    <script src="~/plugins/Isotope/isotope.pkgd.min.js"></script>
+    <script src="~/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+    <script src="~/plugins/easing/easing.js"></script>
+    <script src="~/plugins/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <script src="~/js/single_custom.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var quantity = 1;
+            var maxQuantity = 12;
+            document.querySelector('.plus').addEventListener('click', function () {
+                if (quantity < maxQuantity) {
+                    quantity++;
+                    document.querySelector('.quantity').innerText = quantity;
+                    document.getElementById('quantity_input').value = quantity;
+                }
+            });
+
+            document.querySelector('.minus').addEventListener('click', function () {
+                if (quantity > 1) {
+                    quantity--;
+                    document.querySelector('.quantity').innerText = quantity;
+                    document.getElementById('quantity_input').value = quantity;
+                }
+            });
+        });
+
+
+
+        // Function to handle countdown and removal of temp message
+        function countdownAndRemove() {
+            var tempMessage = document.getElementById('tempMessage');
+            if (!tempMessage) return; // Exit if message element does not exist
+
+            var seconds = 5; // Number of seconds to display the message
+            var countdownText = tempMessage.querySelector('.countdown-text');
+            var progressRing = tempMessage.querySelector('.progress-ring-circle');
+
+            // Update countdown circle every second
+            var interval = setInterval(function () {
+                seconds--;
+                if (seconds >= 0) {
+                    countdownText.innerText = seconds;
+
+                    // Update progress ring animation
+                    var percent = (5 - seconds) / 5 * 251.2; // Calculate stroke-dashoffset based on percentage
+                    progressRing.style.strokeDashoffset = percent;
+                } else {
+                    clearInterval(interval); // Clear interval when countdown is complete
+                    tempMessage.remove(); // Remove the message element
+                }
+            }, 1000); // 1000 milliseconds = 1 second
+        }
+
+        // Wait for DOM to be fully loaded
+        document.addEventListener('DOMContentLoaded', function () {
+            countdownAndRemove(); // Start countdown and removal process
+        });
+    </script>
+</body>
+
+</html>
+

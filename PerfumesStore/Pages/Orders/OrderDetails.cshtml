@@ -1,0 +1,70 @@
+﻿@page
+@model PerfumesStore.Pages.Orders.OrderDetails
+
+@{
+    ViewData["Title"] = "Order Details";
+}
+
+@await Html.PartialAsync("Partials/_HeaderPartial", Model)
+
+<div class="container">
+    <h2>Order Details</h2>
+    <div class="row">
+        <div class="col-md-12" style="margin-top:90px">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Order Details for Order #@(Model.Order.OrderId)</h3>
+                </div>
+                <div class="card-body">
+                    <h4>Customer Information</h4>
+                    <p><strong>Customer Name:</strong> @Model.Orderdetails.FirstOrDefault()?.Fullname</p>
+                    <p><strong>Shipping Address:</strong> @Model.Orderdetails.FirstOrDefault()?.ShippingAddress</p>
+                    <p><strong>Phone Number:</strong> @Model.Orderdetails.FirstOrDefault()?.Phone</p>
+                    <hr />
+                    <h4>Products Purchased</h4>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Product Name</th>
+                                <th>Quantity</th>
+                                <th>Unit Price</th>
+                                <th>Total Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.Orderdetails)
+                            {
+                                <tr>
+
+
+                                    <td>
+                                        @if (item.Product.ProductImg != null && item.Product.ProductImg.Length > 0)
+                                        {
+                                            string imageBase64 = Convert.ToBase64String(item.Product.ProductImg);
+                                            string imageSrc = $"data:image/jpeg;base64,{imageBase64}";
+                                            <a asp-page="/Products/ProductDetails" asp-route-id="@item.Product.ProductId">
+                                                <img style="max-width: 60px; max-height: 60px;" src="@imageSrc" alt="Product Image" />
+                                            </a>
+                                        }   @item.Product.ProductName
+                                    </td>
+                                    <td>@item.Quantity</td>
+                                    <td>@item.UnitPrice</td>
+                                    <td>@(item.Quantity * item.UnitPrice)</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                    <hr />
+                    <div class="d-flex justify-content-between">
+                        <div><strong>Subtotal:</strong></div>
+                        <div>@Model.Orderdetails.Sum(c => c.Quantity * c.Product.Price)₫</div>
+                    </div>
+                    <div>
+                        <a class="btn btn-primary justify-content-end" asp-page="/Orders/ViewOrders" asp-route-id="@Model.Order.OrderId">Back to Order List</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @await Html.PartialAsync("Partials/_FooterPartial", Model)
+</div>

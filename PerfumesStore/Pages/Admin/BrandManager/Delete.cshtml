@@ -1,0 +1,96 @@
+﻿@page
+@model PerfumesStore.Pages.Admin.BrandManager.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<style>
+    body {
+        background-color: #f0f0f0; /* Màu nền chính */
+        color: #333; /* Màu chữ chính */
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        color: #dc3545; /* Màu tiêu đề h1 */
+        text-align: center;
+    }
+
+    h3 {
+        color: #333; /* Màu tiêu đề h3 */
+        margin-top: 20px;
+    }
+
+    .btn-danger {
+        background-color: #dc3545; /* Màu nút Delete */
+        border-color: #dc3545;
+    }
+
+        .btn-danger:hover {
+            background-color: #c82333; /* Màu nút Delete khi hover */
+            border-color: #bd2130;
+        }
+
+    .btn-cancel {
+        color: #007bff; /* Màu chữ cho nút Back */
+        text-decoration: none;
+    }
+
+        .btn-cancel:hover {
+            text-decoration: underline; /* Gạch chân khi hover */
+        }
+
+    .row {
+        margin-bottom: 10px;
+    }
+
+    .dl-horizontal dt {
+        text-align: left;
+        width: 120px; /* Độ rộng của label */
+        font-weight: bold;
+    }
+
+    .dl-horizontal dd {
+        margin-left: 130px; /* Khoảng cách từ label đến giá trị */
+    }
+</style>
+
+<div class="container">
+    <h1>Delete Brand</h1>
+
+    <h3>Are you sure you want to delete this?</h3>
+
+    <div>
+        <h4>Brand Details</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <div class="row">
+                <dt>Brand Name:</dt>
+                <dd>@Html.DisplayFor(model => model.Brand.BrandName)</dd>
+            </div>
+            <div class="row">
+                <dt>Description:</dt>
+                <dd>@Html.DisplayFor(model => model.Brand.Description)</dd>
+            </div>
+            <div class="row">
+                <dt>Status:</dt>
+                <dd>@Html.DisplayFor(model => model.Brand.Status)</dd>
+            </div>
+        </dl>
+
+        <form method="post">
+            <input type="hidden" asp-for="Brand.BrandId" />
+            <input type="submit" value="Delete" class="btn btn-danger" /> |
+            <a asp-page="./Index" class="btn btn-cancel">Back to List</a>
+        </form>
+    </div>
+</div>

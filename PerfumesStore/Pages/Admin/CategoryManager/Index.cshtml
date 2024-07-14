@@ -1,0 +1,182 @@
+﻿@page
+@model PerfumesStore.Pages.Admin.CategoryManager.IndexModel
+
+@{
+    Layout = null;
+    ViewData["Title"] = "Index";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: #444;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            width: 80%;
+            margin: 20px 0;
+            gap: 10px;
+        }
+
+            .action-buttons a {
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: #007bff;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+
+                .action-buttons a:hover {
+                    background-color: #0056b3;
+                }
+
+        .search-container {
+            width: 80%;
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+            .search-container input[type="text"] {
+                width: 300px;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px 0 0 5px;
+                outline: none;
+            }
+
+            .search-container button {
+                padding: 10px 20px;
+                border: none;
+                background-color: #007bff;
+                color: #fff;
+                border-radius: 0 5px 5px 0;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+                .search-container button:hover {
+                    background-color: #0056b3;
+                }
+
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        td a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+            td a:hover {
+                color: #0056b3;
+                text-decoration: underline;
+            }
+    </style>
+</head>
+<body>
+    <h1>Category Manager</h1>
+    <div class="action-buttons">
+        <a asp-page="Create">Create New</a>
+        <a asp-page="/Admin/DashBoard/dashboard">Back to Manager Page</a>
+    </div>
+    <div class="search-container">
+        <form method="get">
+            <input type="text" name="searchString" value="@Model.CurrentFilter" placeholder="Search categories..." />
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    <a asp-page="./Index" asp-route-sortOrder="@Model.NameSort">
+                        @Html.DisplayNameFor(model => model.Categories[0].CategoryName)
+                    </a>
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Categories[0].Description)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Categories[0].Status)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Categories)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CategoryName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Status)
+                    </td>
+                    <td>
+                        <a asp-page="./Edit" asp-route-id="@item.CategoryId">Edit</a> |
+                        <a asp-page="./Details" asp-route-id="@item.CategoryId">Details</a> |
+                        <a asp-page="./Delete" asp-route-id="@item.CategoryId">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div class="pagination">
+        @* Add pagination control here *@
+    </div>
+</body>
+</html>

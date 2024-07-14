@@ -1,0 +1,132 @@
+﻿@page
+@model PerfumesStore.Pages.Admin.ProductManager.CreateModel
+
+@{
+    Layout = null;
+    ViewData["Title"] = "Create";
+}
+
+<style>
+    body {
+        background-color: #e0f7fa; /* Màu nền của trang */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-container {
+        width: 100%;
+        max-width: 800px; /* Điều chỉnh kích thước form */
+        background-color: #ffffff; /* Màu nền của form */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+        .form-container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333333;
+        }
+
+    .form-group label {
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .form-group input, .form-group select {
+        border-radius: 4px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        width: 100%; /* Đặt width 100% cho các input và select */
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 4px;
+        margin-top: 20px;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+
+    .back-link {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        color: #007bff;
+    }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+</style>
+
+<div class="form-container">
+    <h1>Create Product</h1>
+
+    <hr />
+    <form method="post" enctype="multipart/form-data">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="Product.BrandId" class="control-label"></label>
+            <select asp-for="Product.BrandId" class="form-control" asp-items="@(ViewData["Brands"] as SelectList)"></select>
+            <span asp-validation-for="Product.BrandId" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Product.CategoryId" class="control-label"></label>
+            <select asp-for="Product.CategoryId" class="form-control" asp-items="@(ViewData["Categories"] as SelectList)"></select>
+            <span asp-validation-for="Product.CategoryId" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Product.ProductName" class="control-label"></label>
+            <input asp-for="Product.ProductName" class="form-control" />
+            <span asp-validation-for="Product.ProductName" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Product.Price" class="control-label"></label>
+            <input asp-for="Product.Price" class="form-control" />
+            <span asp-validation-for="Product.Price" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Product.Description" class="control-label"></label>
+            <input asp-for="Product.Description" class="form-control" />
+            <span asp-validation-for="Product.Description" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Product.ProductImg" class="control-label"></label>
+            <input asp-for="ProductImg" type="file" class="form-control" />
+            <span asp-validation-for="Product.ProductImg" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Product.Stock" class="control-label"></label>
+            <input asp-for="Product.Stock" class="form-control" />
+            <span asp-validation-for="Product.Stock" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Create" class="btn btn-primary" />
+        </div>
+    </form>
+    <div>
+        <a asp-page="Index" class="back-link">Back to List</a>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

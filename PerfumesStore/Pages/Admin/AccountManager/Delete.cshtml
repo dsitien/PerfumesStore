@@ -1,0 +1,179 @@
+﻿@page
+@model PerfumesStore.Pages.Admin.AccountManager.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #ffecd2, #fcb69f); /* Gradient màu nền */
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Hiệu chỉnh chiều cao cho trang */
+    }
+
+    .container {
+        max-width: 800px;
+        width: 100%;
+        margin: 20px;
+        padding: 40px;
+        background-color: #fff; /* Nền trắng cho container */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 32px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        font-size: 20px;
+        color: #007bff; /* Màu chữ cho tiêu đề h4 */
+        margin-bottom: 10px;
+    }
+
+    hr {
+        border-top: 1px solid #ccc; /* Đường gạch ngang */
+        margin: 20px 0;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #F08080; /* Màu nền đầu bảng cho tiêu đề */
+        color: white;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2; /* Màu nền cho các hàng chẵn */
+    }
+
+    tr:hover {
+        background-color: #ddd; /* Hiệu ứng hover */
+    }
+
+    form {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .btn-danger, .btn-secondary {
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+        margin-right: 10px;
+    }
+
+    .btn-danger {
+        background-color: #dc3545; /* Màu nền nút Delete */
+        border: 1px solid #dc3545;
+        color: white;
+    }
+
+        .btn-danger:hover {
+            background-color: black;
+            border-color: black;
+        }
+
+    .btn-secondary {
+        background-color: #007bff; /* Màu nền nút Back to List */
+        border: 1px solid #007bff;
+        color: white;
+    }
+
+        .btn-secondary:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+
+    a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+        a:hover {
+            text-decoration: underline;
+        }
+</style>
+
+<div class="container">
+    <h1>Delete</h1>
+
+    <h3>Are you sure you want to delete this?</h3>
+
+    <div>
+        <h4>User Details</h4>
+        <hr />
+        <table>
+            <tr>
+                <th>Field</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.User.Username)</td>
+                <td>@Html.DisplayFor(model => model.User.Username)</td>
+            </tr>
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.User.Password)</td>
+                <td>@Html.DisplayFor(model => model.User.Password)</td>
+            </tr>
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.User.Email)</td>
+                <td>@Html.DisplayFor(model => model.User.Email)</td>
+            </tr>
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.User.FullName)</td>
+                <td>@Html.DisplayFor(model => model.User.FullName)</td>
+            </tr>
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.User.Phone)</td>
+                <td>@Html.DisplayFor(model => model.User.Phone)</td>
+            </tr>
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.User.Address)</td>
+                <td>@Html.DisplayFor(model => model.User.Address)</td>
+            </tr>
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.User.Status)</td>
+                <td>@Html.DisplayFor(model => model.User.Status)</td>
+            </tr>
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.User.Role)</td>
+                <td>@Html.DisplayFor(model => model.User.Role)</td>
+            </tr>
+        </table>
+
+        <form method="post">
+            <input type="hidden" asp-for="User.UserId" />
+            <button type="submit" class="btn btn-danger">Delete</button>
+            <a asp-page="./Index" class="btn btn-secondary">Back to List</a>
+        </form>
+    </div>
+</div>

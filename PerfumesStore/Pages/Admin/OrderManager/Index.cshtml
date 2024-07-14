@@ -1,0 +1,109 @@
+﻿@page
+@model PerfumesStore.Pages.Admin.OrderManager.IndexModel
+@{
+    ViewData["Title"] = "Order Manager";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #343a40;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .action-buttons {
+            margin-bottom: 20px;
+        }
+
+            .action-buttons a {
+                display: inline-block;
+                margin-right: 10px;
+                padding: 8px 16px;
+                background-color: red;
+                color:black;
+                text-decoration: none;
+                border-radius: 4px;
+                transition: background-color 0.3s ease;
+            }
+
+                .action-buttons a:hover {
+                    background-color: red ;
+                }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+            .table th, .table td {
+                padding: 12px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .table th {
+                background-color: yellowgreen;
+                font-weight: bold;
+            }
+
+            .table tbody tr:hover {
+                background-color: #f5f5f5;
+            }
+
+            .table a {
+                margin-right: 5px;
+                text-decoration: none;
+                color: #007bff;
+            }
+
+                .table a:hover {
+                    text-decoration: underline;
+                }
+    </style>
+</head>
+<body>
+    <h1>Order Manager</h1>
+    <div class="action-buttons">
+        <a asp-page="/Admin/Dashboard/dashboard" class="btn">Back to Dashboard</a>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Full Name</th>
+                <th>Total Amount</th>
+                <th>Created At</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Order)
+            {
+                <tr>
+                    <td>@item.User?.FullName</td>
+                    <td>@item.TotalAmount</td>
+                    <td>@item.CreatedAt?.ToString("dd/MM/yyyy")</td>
+                    <td>@item.Status</td>
+                    <td>
+                        <a asp-page="./Edit" asp-route-id="@item.OrderId" class="btn btn-sm btn-primary">Edit</a>|
+                        <a asp-page="./Details" asp-route-id="@item.OrderId" class="btn btn-sm btn-info">Details</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>
